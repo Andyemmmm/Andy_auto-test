@@ -1,0 +1,356 @@
+[   INFO] [2019-04-04 16:37:06,387] [1112] [HTMLReport.py(101)] - 预计并发线程数：1
+[   INFO] [2019-04-04 16:37:06,387] [2880] [Result.py(48)] - 开始测试： test_login_1___liu01____123456____1__ (Test_Case.用户中心.test_login_封装.TestLogin)
+[  DEBUG] [2019-04-04 16:37:07,133] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61256/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+[  DEBUG] [2019-04-04 16:37:07,134] [2880] [connectionpool.py(208)] - Starting new HTTP connection (1): 127.0.0.1
+[  DEBUG] [2019-04-04 16:37:09,639] [2880] [connectionpool.py(396)] - http://127.0.0.1:61256 "POST /session HTTP/1.1" 200 997
+[  DEBUG] [2019-04-04 16:37:09,639] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:09,640] [2880] [browser.py(23)] - 打开浏览器：chrome
+[   INFO] [2019-04-04 16:37:09,640] [2880] [browser.py(25)] - 设置隐式等待 10s
+[  DEBUG] [2019-04-04 16:37:09,640] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61256/session/3b69567dbfcf691915a4b5b7b19138d0/timeouts/implicit_wait {"ms": 10000.0, "sessionId": "3b69567dbfcf691915a4b5b7b19138d0"}
+[  DEBUG] [2019-04-04 16:37:09,641] [2880] [connectionpool.py(396)] - http://127.0.0.1:61256 "POST /session/3b69567dbfcf691915a4b5b7b19138d0/timeouts/implicit_wait HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:09,642] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:09,642] [2880] [browser.py(28)] - 最大化浏览器
+[  DEBUG] [2019-04-04 16:37:09,642] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61256/session/3b69567dbfcf691915a4b5b7b19138d0/window/current/maximize {"windowHandle": "current", "sessionId": "3b69567dbfcf691915a4b5b7b19138d0"}
+[  DEBUG] [2019-04-04 16:37:10,804] [2880] [connectionpool.py(396)] - http://127.0.0.1:61256 "POST /session/3b69567dbfcf691915a4b5b7b19138d0/window/current/maximize HTTP/1.1" 200 110
+[  DEBUG] [2019-04-04 16:37:10,804] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:10,806] [2880] [browser.py(56)] - 打开网址：http://192.168.22.128/dsc/
+[  DEBUG] [2019-04-04 16:37:10,808] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61256/session/3b69567dbfcf691915a4b5b7b19138d0/url {"url": "http://192.168.22.128/dsc/", "sessionId": "3b69567dbfcf691915a4b5b7b19138d0"}
+[  DEBUG] [2019-04-04 16:37:12,209] [2880] [connectionpool.py(396)] - http://127.0.0.1:61256 "POST /session/3b69567dbfcf691915a4b5b7b19138d0/url HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:12,210] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:12,210] [2880] [element.py(21)] - 点击元素：('link text', '请登录')
+[   INFO] [2019-04-04 16:37:12,211] [2880] [base.py(16)] - 查找元素：('link text', '请登录')
+[  DEBUG] [2019-04-04 16:37:12,211] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61256/session/3b69567dbfcf691915a4b5b7b19138d0/element {"using": "link text", "value": "\u8bf7\u767b\u5f55", "sessionId": "3b69567dbfcf691915a4b5b7b19138d0"}
+[  DEBUG] [2019-04-04 16:37:12,257] [2880] [connectionpool.py(396)] - http://127.0.0.1:61256 "POST /session/3b69567dbfcf691915a4b5b7b19138d0/element HTTP/1.1" 200 101
+[  DEBUG] [2019-04-04 16:37:12,258] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:12,258] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:12,259] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61256/session/3b69567dbfcf691915a4b5b7b19138d0/element/0.261921658330335-1/click {"id": "0.261921658330335-1", "sessionId": "3b69567dbfcf691915a4b5b7b19138d0"}
+[  DEBUG] [2019-04-04 16:37:12,691] [2880] [connectionpool.py(396)] - http://127.0.0.1:61256 "POST /session/3b69567dbfcf691915a4b5b7b19138d0/element/0.261921658330335-1/click HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:12,695] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:12,695] [2880] [test_login_封装.py(67)] - 输入用户名：liu01
+[   INFO] [2019-04-04 16:37:12,695] [2880] [element.py(26)] - 发送文本或按键：('liu01',) 到元素上：('id', 'username')
+[   INFO] [2019-04-04 16:37:12,695] [2880] [base.py(16)] - 查找元素：('id', 'username')
+[  DEBUG] [2019-04-04 16:37:12,696] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61256/session/3b69567dbfcf691915a4b5b7b19138d0/element {"using": "id", "value": "username", "sessionId": "3b69567dbfcf691915a4b5b7b19138d0"}
+[  DEBUG] [2019-04-04 16:37:12,715] [2880] [connectionpool.py(396)] - http://127.0.0.1:61256 "POST /session/3b69567dbfcf691915a4b5b7b19138d0/element HTTP/1.1" 200 101
+[  DEBUG] [2019-04-04 16:37:12,715] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:12,716] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:12,716] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61256/session/3b69567dbfcf691915a4b5b7b19138d0/element/0.931336505409541-1/clear {"id": "0.931336505409541-1", "sessionId": "3b69567dbfcf691915a4b5b7b19138d0"}
+[  DEBUG] [2019-04-04 16:37:12,746] [2880] [connectionpool.py(396)] - http://127.0.0.1:61256 "POST /session/3b69567dbfcf691915a4b5b7b19138d0/element/0.931336505409541-1/clear HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:12,746] [2880] [remote_connection.py(440)] - Finished Request
+[  DEBUG] [2019-04-04 16:37:12,747] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61256/session/3b69567dbfcf691915a4b5b7b19138d0/element/0.931336505409541-1/value {"text": "liu01", "value": ["l", "i", "u", "0", "1"], "id": "0.931336505409541-1", "sessionId": "3b69567dbfcf691915a4b5b7b19138d0"}
+[  DEBUG] [2019-04-04 16:37:12,824] [2880] [connectionpool.py(396)] - http://127.0.0.1:61256 "POST /session/3b69567dbfcf691915a4b5b7b19138d0/element/0.931336505409541-1/value HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:12,825] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:12,825] [2880] [element.py(26)] - 发送文本或按键：('123456',) 到元素上：('id', 'nloginpwd')
+[   INFO] [2019-04-04 16:37:12,825] [2880] [base.py(16)] - 查找元素：('id', 'nloginpwd')
+[  DEBUG] [2019-04-04 16:37:12,826] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61256/session/3b69567dbfcf691915a4b5b7b19138d0/element {"using": "id", "value": "nloginpwd", "sessionId": "3b69567dbfcf691915a4b5b7b19138d0"}
+[  DEBUG] [2019-04-04 16:37:12,835] [2880] [connectionpool.py(396)] - http://127.0.0.1:61256 "POST /session/3b69567dbfcf691915a4b5b7b19138d0/element HTTP/1.1" 200 101
+[  DEBUG] [2019-04-04 16:37:12,835] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:12,835] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:12,836] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61256/session/3b69567dbfcf691915a4b5b7b19138d0/element/0.931336505409541-2/clear {"id": "0.931336505409541-2", "sessionId": "3b69567dbfcf691915a4b5b7b19138d0"}
+[  DEBUG] [2019-04-04 16:37:12,854] [2880] [connectionpool.py(396)] - http://127.0.0.1:61256 "POST /session/3b69567dbfcf691915a4b5b7b19138d0/element/0.931336505409541-2/clear HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:12,855] [2880] [remote_connection.py(440)] - Finished Request
+[  DEBUG] [2019-04-04 16:37:12,855] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61256/session/3b69567dbfcf691915a4b5b7b19138d0/element/0.931336505409541-2/value {"text": "123456", "value": ["1", "2", "3", "4", "5", "6"], "id": "0.931336505409541-2", "sessionId": "3b69567dbfcf691915a4b5b7b19138d0"}
+[  DEBUG] [2019-04-04 16:37:12,887] [2880] [connectionpool.py(396)] - http://127.0.0.1:61256 "POST /session/3b69567dbfcf691915a4b5b7b19138d0/element/0.931336505409541-2/value HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:12,888] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:12,888] [2880] [element.py(21)] - 点击元素：('id', 'loginSubmit')
+[   INFO] [2019-04-04 16:37:12,889] [2880] [base.py(16)] - 查找元素：('id', 'loginSubmit')
+[  DEBUG] [2019-04-04 16:37:12,889] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61256/session/3b69567dbfcf691915a4b5b7b19138d0/element {"using": "id", "value": "loginSubmit", "sessionId": "3b69567dbfcf691915a4b5b7b19138d0"}
+[  DEBUG] [2019-04-04 16:37:12,901] [2880] [connectionpool.py(396)] - http://127.0.0.1:61256 "POST /session/3b69567dbfcf691915a4b5b7b19138d0/element HTTP/1.1" 200 101
+[  DEBUG] [2019-04-04 16:37:12,902] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:12,902] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:12,902] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61256/session/3b69567dbfcf691915a4b5b7b19138d0/element/0.931336505409541-3/click {"id": "0.931336505409541-3", "sessionId": "3b69567dbfcf691915a4b5b7b19138d0"}
+[  DEBUG] [2019-04-04 16:37:13,023] [2880] [connectionpool.py(396)] - http://127.0.0.1:61256 "POST /session/3b69567dbfcf691915a4b5b7b19138d0/element/0.931336505409541-3/click HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:13,023] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:13,024] [2880] [base.py(16)] - 查找元素：('xpath', '//*[@id="ECS_MEMBERZONE"]/span[1]')
+[  DEBUG] [2019-04-04 16:37:13,025] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61256/session/3b69567dbfcf691915a4b5b7b19138d0/element {"using": "xpath", "value": "//*[@id=\"ECS_MEMBERZONE\"]/span[1]", "sessionId": "3b69567dbfcf691915a4b5b7b19138d0"}
+[  DEBUG] [2019-04-04 16:37:13,528] [2880] [connectionpool.py(396)] - http://127.0.0.1:61256 "POST /session/3b69567dbfcf691915a4b5b7b19138d0/element HTTP/1.1" 200 103
+[  DEBUG] [2019-04-04 16:37:13,529] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:13,529] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:13,530] [2880] [remote_connection.py(389)] - GET http://127.0.0.1:61256/session/3b69567dbfcf691915a4b5b7b19138d0/element/0.19363857293757825-1/text {"id": "0.19363857293757825-1", "sessionId": "3b69567dbfcf691915a4b5b7b19138d0"}
+[  DEBUG] [2019-04-04 16:37:13,564] [2880] [connectionpool.py(396)] - http://127.0.0.1:61256 "GET /session/3b69567dbfcf691915a4b5b7b19138d0/element/0.19363857293757825-1/text HTTP/1.1" 200 84
+[  DEBUG] [2019-04-04 16:37:13,564] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:13,565] [2880] [element.py(12)] - 获取元素的文本值：您好  士哥
+[   INFO] [2019-04-04 16:37:13,565] [2880] [base.py(16)] - 查找元素：('xpath', '//*[@id="ECS_MEMBERZONE"]/span[3]/a')
+[  DEBUG] [2019-04-04 16:37:13,565] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61256/session/3b69567dbfcf691915a4b5b7b19138d0/element {"using": "xpath", "value": "//*[@id=\"ECS_MEMBERZONE\"]/span[3]/a", "sessionId": "3b69567dbfcf691915a4b5b7b19138d0"}
+[  DEBUG] [2019-04-04 16:37:13,576] [2880] [connectionpool.py(396)] - http://127.0.0.1:61256 "POST /session/3b69567dbfcf691915a4b5b7b19138d0/element HTTP/1.1" 200 103
+[  DEBUG] [2019-04-04 16:37:13,577] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:13,577] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:13,577] [2880] [remote_connection.py(389)] - GET http://127.0.0.1:61256/session/3b69567dbfcf691915a4b5b7b19138d0/element/0.19363857293757825-2/text {"id": "0.19363857293757825-2", "sessionId": "3b69567dbfcf691915a4b5b7b19138d0"}
+[  DEBUG] [2019-04-04 16:37:13,590] [2880] [connectionpool.py(396)] - http://127.0.0.1:61256 "GET /session/3b69567dbfcf691915a4b5b7b19138d0/element/0.19363857293757825-2/text HTTP/1.1" 200 76
+[  DEBUG] [2019-04-04 16:37:13,591] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:13,591] [2880] [element.py(12)] - 获取元素的文本值：退出
+[   INFO] [2019-04-04 16:37:13,592] [2880] [browser.py(47)] - 关闭浏览器：chrome
+[  DEBUG] [2019-04-04 16:37:13,593] [2880] [remote_connection.py(389)] - DELETE http://127.0.0.1:61256/session/3b69567dbfcf691915a4b5b7b19138d0 {"sessionId": "3b69567dbfcf691915a4b5b7b19138d0"}
+[  DEBUG] [2019-04-04 16:37:13,685] [2880] [connectionpool.py(396)] - http://127.0.0.1:61256 "DELETE /session/3b69567dbfcf691915a4b5b7b19138d0 HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:13,686] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:15,835] [2880] [Result.py(106)] - 测试执行通过： test_login_1___liu01____123456____1__ (Test_Case.用户中心.test_login_封装.TestLogin)
+[   INFO] [2019-04-04 16:37:15,836] [2880] [Result.py(59)] - 测试结束： test_login_1___liu01____123456____1__ (Test_Case.用户中心.test_login_封装.TestLogin)
+[   INFO] [2019-04-04 16:37:15,836] [2880] [Result.py(61)] - 耗时： 9.447659699999999
+[   INFO] [2019-04-04 16:37:15,837] [2880] [Result.py(48)] - 开始测试： test_login_2_______123465____2__ (Test_Case.用户中心.test_login_封装.TestLogin)
+[  DEBUG] [2019-04-04 16:37:16,369] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61299/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+[  DEBUG] [2019-04-04 16:37:16,371] [2880] [connectionpool.py(208)] - Starting new HTTP connection (1): 127.0.0.1
+[  DEBUG] [2019-04-04 16:37:18,320] [2880] [connectionpool.py(396)] - http://127.0.0.1:61299 "POST /session HTTP/1.1" 200 998
+[  DEBUG] [2019-04-04 16:37:18,321] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:18,322] [2880] [browser.py(23)] - 打开浏览器：chrome
+[   INFO] [2019-04-04 16:37:18,323] [2880] [browser.py(25)] - 设置隐式等待 10s
+[  DEBUG] [2019-04-04 16:37:18,324] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61299/session/17ed9bc549394c8bf6665a2ccc0e8372/timeouts/implicit_wait {"ms": 10000.0, "sessionId": "17ed9bc549394c8bf6665a2ccc0e8372"}
+[  DEBUG] [2019-04-04 16:37:18,326] [2880] [connectionpool.py(396)] - http://127.0.0.1:61299 "POST /session/17ed9bc549394c8bf6665a2ccc0e8372/timeouts/implicit_wait HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:18,327] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:18,328] [2880] [browser.py(28)] - 最大化浏览器
+[  DEBUG] [2019-04-04 16:37:18,328] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61299/session/17ed9bc549394c8bf6665a2ccc0e8372/window/current/maximize {"windowHandle": "current", "sessionId": "17ed9bc549394c8bf6665a2ccc0e8372"}
+[  DEBUG] [2019-04-04 16:37:19,461] [2880] [connectionpool.py(396)] - http://127.0.0.1:61299 "POST /session/17ed9bc549394c8bf6665a2ccc0e8372/window/current/maximize HTTP/1.1" 200 110
+[  DEBUG] [2019-04-04 16:37:19,461] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:19,461] [2880] [browser.py(56)] - 打开网址：http://192.168.22.128/dsc/
+[  DEBUG] [2019-04-04 16:37:19,462] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61299/session/17ed9bc549394c8bf6665a2ccc0e8372/url {"url": "http://192.168.22.128/dsc/", "sessionId": "17ed9bc549394c8bf6665a2ccc0e8372"}
+[  DEBUG] [2019-04-04 16:37:20,837] [2880] [connectionpool.py(396)] - http://127.0.0.1:61299 "POST /session/17ed9bc549394c8bf6665a2ccc0e8372/url HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:20,838] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:20,838] [2880] [element.py(21)] - 点击元素：('link text', '请登录')
+[   INFO] [2019-04-04 16:37:20,838] [2880] [base.py(16)] - 查找元素：('link text', '请登录')
+[  DEBUG] [2019-04-04 16:37:20,838] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61299/session/17ed9bc549394c8bf6665a2ccc0e8372/element {"using": "link text", "value": "\u8bf7\u767b\u5f55", "sessionId": "17ed9bc549394c8bf6665a2ccc0e8372"}
+[  DEBUG] [2019-04-04 16:37:20,895] [2880] [connectionpool.py(396)] - http://127.0.0.1:61299 "POST /session/17ed9bc549394c8bf6665a2ccc0e8372/element HTTP/1.1" 200 103
+[  DEBUG] [2019-04-04 16:37:20,896] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:20,896] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:20,896] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61299/session/17ed9bc549394c8bf6665a2ccc0e8372/element/0.09269056106670792-1/click {"id": "0.09269056106670792-1", "sessionId": "17ed9bc549394c8bf6665a2ccc0e8372"}
+[  DEBUG] [2019-04-04 16:37:21,417] [2880] [connectionpool.py(396)] - http://127.0.0.1:61299 "POST /session/17ed9bc549394c8bf6665a2ccc0e8372/element/0.09269056106670792-1/click HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:21,421] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:21,421] [2880] [test_login_封装.py(67)] - 输入用户名：
+[   INFO] [2019-04-04 16:37:21,421] [2880] [element.py(26)] - 发送文本或按键：('',) 到元素上：('id', 'username')
+[   INFO] [2019-04-04 16:37:21,421] [2880] [base.py(16)] - 查找元素：('id', 'username')
+[  DEBUG] [2019-04-04 16:37:21,422] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61299/session/17ed9bc549394c8bf6665a2ccc0e8372/element {"using": "id", "value": "username", "sessionId": "17ed9bc549394c8bf6665a2ccc0e8372"}
+[  DEBUG] [2019-04-04 16:37:21,451] [2880] [connectionpool.py(396)] - http://127.0.0.1:61299 "POST /session/17ed9bc549394c8bf6665a2ccc0e8372/element HTTP/1.1" 200 102
+[  DEBUG] [2019-04-04 16:37:21,451] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:21,451] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:21,452] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61299/session/17ed9bc549394c8bf6665a2ccc0e8372/element/0.8545763739087129-1/clear {"id": "0.8545763739087129-1", "sessionId": "17ed9bc549394c8bf6665a2ccc0e8372"}
+[  DEBUG] [2019-04-04 16:37:21,503] [2880] [connectionpool.py(396)] - http://127.0.0.1:61299 "POST /session/17ed9bc549394c8bf6665a2ccc0e8372/element/0.8545763739087129-1/clear HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:21,504] [2880] [remote_connection.py(440)] - Finished Request
+[  DEBUG] [2019-04-04 16:37:21,505] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61299/session/17ed9bc549394c8bf6665a2ccc0e8372/element/0.8545763739087129-1/value {"text": "", "value": [], "id": "0.8545763739087129-1", "sessionId": "17ed9bc549394c8bf6665a2ccc0e8372"}
+[  DEBUG] [2019-04-04 16:37:21,530] [2880] [connectionpool.py(396)] - http://127.0.0.1:61299 "POST /session/17ed9bc549394c8bf6665a2ccc0e8372/element/0.8545763739087129-1/value HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:21,530] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:21,530] [2880] [element.py(26)] - 发送文本或按键：('123465',) 到元素上：('id', 'nloginpwd')
+[   INFO] [2019-04-04 16:37:21,530] [2880] [base.py(16)] - 查找元素：('id', 'nloginpwd')
+[  DEBUG] [2019-04-04 16:37:21,531] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61299/session/17ed9bc549394c8bf6665a2ccc0e8372/element {"using": "id", "value": "nloginpwd", "sessionId": "17ed9bc549394c8bf6665a2ccc0e8372"}
+[  DEBUG] [2019-04-04 16:37:21,580] [2880] [connectionpool.py(396)] - http://127.0.0.1:61299 "POST /session/17ed9bc549394c8bf6665a2ccc0e8372/element HTTP/1.1" 200 102
+[  DEBUG] [2019-04-04 16:37:21,581] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:21,581] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:21,581] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61299/session/17ed9bc549394c8bf6665a2ccc0e8372/element/0.8545763739087129-2/clear {"id": "0.8545763739087129-2", "sessionId": "17ed9bc549394c8bf6665a2ccc0e8372"}
+[  DEBUG] [2019-04-04 16:37:21,615] [2880] [connectionpool.py(396)] - http://127.0.0.1:61299 "POST /session/17ed9bc549394c8bf6665a2ccc0e8372/element/0.8545763739087129-2/clear HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:21,616] [2880] [remote_connection.py(440)] - Finished Request
+[  DEBUG] [2019-04-04 16:37:21,616] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61299/session/17ed9bc549394c8bf6665a2ccc0e8372/element/0.8545763739087129-2/value {"text": "123465", "value": ["1", "2", "3", "4", "6", "5"], "id": "0.8545763739087129-2", "sessionId": "17ed9bc549394c8bf6665a2ccc0e8372"}
+[  DEBUG] [2019-04-04 16:37:21,761] [2880] [connectionpool.py(396)] - http://127.0.0.1:61299 "POST /session/17ed9bc549394c8bf6665a2ccc0e8372/element/0.8545763739087129-2/value HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:21,762] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:21,762] [2880] [element.py(21)] - 点击元素：('id', 'loginSubmit')
+[   INFO] [2019-04-04 16:37:21,762] [2880] [base.py(16)] - 查找元素：('id', 'loginSubmit')
+[  DEBUG] [2019-04-04 16:37:21,763] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61299/session/17ed9bc549394c8bf6665a2ccc0e8372/element {"using": "id", "value": "loginSubmit", "sessionId": "17ed9bc549394c8bf6665a2ccc0e8372"}
+[  DEBUG] [2019-04-04 16:37:21,779] [2880] [connectionpool.py(396)] - http://127.0.0.1:61299 "POST /session/17ed9bc549394c8bf6665a2ccc0e8372/element HTTP/1.1" 200 102
+[  DEBUG] [2019-04-04 16:37:21,779] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:21,779] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:21,780] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61299/session/17ed9bc549394c8bf6665a2ccc0e8372/element/0.8545763739087129-3/click {"id": "0.8545763739087129-3", "sessionId": "17ed9bc549394c8bf6665a2ccc0e8372"}
+[  DEBUG] [2019-04-04 16:37:21,845] [2880] [connectionpool.py(396)] - http://127.0.0.1:61299 "POST /session/17ed9bc549394c8bf6665a2ccc0e8372/element/0.8545763739087129-3/click HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:21,846] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:21,847] [2880] [base.py(16)] - 查找元素：('class name', 'msg-error')
+[  DEBUG] [2019-04-04 16:37:21,847] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61299/session/17ed9bc549394c8bf6665a2ccc0e8372/element {"using": "class name", "value": "msg-error", "sessionId": "17ed9bc549394c8bf6665a2ccc0e8372"}
+[  DEBUG] [2019-04-04 16:37:21,861] [2880] [connectionpool.py(396)] - http://127.0.0.1:61299 "POST /session/17ed9bc549394c8bf6665a2ccc0e8372/element HTTP/1.1" 200 102
+[  DEBUG] [2019-04-04 16:37:21,862] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:21,862] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:21,862] [2880] [remote_connection.py(389)] - GET http://127.0.0.1:61299/session/17ed9bc549394c8bf6665a2ccc0e8372/element/0.8545763739087129-4/text {"id": "0.8545763739087129-4", "sessionId": "17ed9bc549394c8bf6665a2ccc0e8372"}
+[  DEBUG] [2019-04-04 16:37:21,880] [2880] [connectionpool.py(396)] - http://127.0.0.1:61299 "GET /session/17ed9bc549394c8bf6665a2ccc0e8372/element/0.8545763739087129-4/text HTTP/1.1" 200 88
+[  DEBUG] [2019-04-04 16:37:21,880] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:21,880] [2880] [element.py(12)] - 获取元素的文本值：请输入用户名
+[   INFO] [2019-04-04 16:37:21,881] [2880] [browser.py(47)] - 关闭浏览器：chrome
+[  DEBUG] [2019-04-04 16:37:21,881] [2880] [remote_connection.py(389)] - DELETE http://127.0.0.1:61299/session/17ed9bc549394c8bf6665a2ccc0e8372 {"sessionId": "17ed9bc549394c8bf6665a2ccc0e8372"}
+[  DEBUG] [2019-04-04 16:37:21,966] [2880] [connectionpool.py(396)] - http://127.0.0.1:61299 "DELETE /session/17ed9bc549394c8bf6665a2ccc0e8372 HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:21,967] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:24,147] [2880] [Result.py(106)] - 测试执行通过： test_login_2_______123465____2__ (Test_Case.用户中心.test_login_封装.TestLogin)
+[   INFO] [2019-04-04 16:37:24,147] [2880] [Result.py(59)] - 测试结束： test_login_2_______123465____2__ (Test_Case.用户中心.test_login_封装.TestLogin)
+[   INFO] [2019-04-04 16:37:24,147] [2880] [Result.py(61)] - 耗时： 8.310034499999999
+[   INFO] [2019-04-04 16:37:24,147] [2880] [Result.py(48)] - 开始测试： test_login_3___________2__ (Test_Case.用户中心.test_login_封装.TestLogin)
+[  DEBUG] [2019-04-04 16:37:24,662] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61338/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+[  DEBUG] [2019-04-04 16:37:24,663] [2880] [connectionpool.py(208)] - Starting new HTTP connection (1): 127.0.0.1
+[  DEBUG] [2019-04-04 16:37:26,458] [2880] [connectionpool.py(396)] - http://127.0.0.1:61338 "POST /session HTTP/1.1" 200 997
+[  DEBUG] [2019-04-04 16:37:26,459] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:26,459] [2880] [browser.py(23)] - 打开浏览器：chrome
+[   INFO] [2019-04-04 16:37:26,459] [2880] [browser.py(25)] - 设置隐式等待 10s
+[  DEBUG] [2019-04-04 16:37:26,459] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61338/session/f49375892ed103ee69c013d16abff130/timeouts/implicit_wait {"ms": 10000.0, "sessionId": "f49375892ed103ee69c013d16abff130"}
+[  DEBUG] [2019-04-04 16:37:26,460] [2880] [connectionpool.py(396)] - http://127.0.0.1:61338 "POST /session/f49375892ed103ee69c013d16abff130/timeouts/implicit_wait HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:26,460] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:26,460] [2880] [browser.py(28)] - 最大化浏览器
+[  DEBUG] [2019-04-04 16:37:26,460] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61338/session/f49375892ed103ee69c013d16abff130/window/current/maximize {"windowHandle": "current", "sessionId": "f49375892ed103ee69c013d16abff130"}
+[  DEBUG] [2019-04-04 16:37:27,605] [2880] [connectionpool.py(396)] - http://127.0.0.1:61338 "POST /session/f49375892ed103ee69c013d16abff130/window/current/maximize HTTP/1.1" 200 110
+[  DEBUG] [2019-04-04 16:37:27,606] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:27,608] [2880] [browser.py(56)] - 打开网址：http://192.168.22.128/dsc/
+[  DEBUG] [2019-04-04 16:37:27,608] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61338/session/f49375892ed103ee69c013d16abff130/url {"url": "http://192.168.22.128/dsc/", "sessionId": "f49375892ed103ee69c013d16abff130"}
+[  DEBUG] [2019-04-04 16:37:28,763] [2880] [connectionpool.py(396)] - http://127.0.0.1:61338 "POST /session/f49375892ed103ee69c013d16abff130/url HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:28,764] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:28,764] [2880] [element.py(21)] - 点击元素：('link text', '请登录')
+[   INFO] [2019-04-04 16:37:28,764] [2880] [base.py(16)] - 查找元素：('link text', '请登录')
+[  DEBUG] [2019-04-04 16:37:28,765] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61338/session/f49375892ed103ee69c013d16abff130/element {"using": "link text", "value": "\u8bf7\u767b\u5f55", "sessionId": "f49375892ed103ee69c013d16abff130"}
+[  DEBUG] [2019-04-04 16:37:28,796] [2880] [connectionpool.py(396)] - http://127.0.0.1:61338 "POST /session/f49375892ed103ee69c013d16abff130/element HTTP/1.1" 200 102
+[  DEBUG] [2019-04-04 16:37:28,796] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:28,797] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:28,797] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61338/session/f49375892ed103ee69c013d16abff130/element/0.8758835886590484-1/click {"id": "0.8758835886590484-1", "sessionId": "f49375892ed103ee69c013d16abff130"}
+[  DEBUG] [2019-04-04 16:37:29,108] [2880] [connectionpool.py(396)] - http://127.0.0.1:61338 "POST /session/f49375892ed103ee69c013d16abff130/element/0.8758835886590484-1/click HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:29,108] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:29,109] [2880] [test_login_封装.py(67)] - 输入用户名：
+[   INFO] [2019-04-04 16:37:29,109] [2880] [element.py(26)] - 发送文本或按键：('',) 到元素上：('id', 'username')
+[   INFO] [2019-04-04 16:37:29,109] [2880] [base.py(16)] - 查找元素：('id', 'username')
+[  DEBUG] [2019-04-04 16:37:29,110] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61338/session/f49375892ed103ee69c013d16abff130/element {"using": "id", "value": "username", "sessionId": "f49375892ed103ee69c013d16abff130"}
+[  DEBUG] [2019-04-04 16:37:29,142] [2880] [connectionpool.py(396)] - http://127.0.0.1:61338 "POST /session/f49375892ed103ee69c013d16abff130/element HTTP/1.1" 200 103
+[  DEBUG] [2019-04-04 16:37:29,142] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:29,143] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:29,143] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61338/session/f49375892ed103ee69c013d16abff130/element/0.05136274181177636-1/clear {"id": "0.05136274181177636-1", "sessionId": "f49375892ed103ee69c013d16abff130"}
+[  DEBUG] [2019-04-04 16:37:29,185] [2880] [connectionpool.py(396)] - http://127.0.0.1:61338 "POST /session/f49375892ed103ee69c013d16abff130/element/0.05136274181177636-1/clear HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:29,185] [2880] [remote_connection.py(440)] - Finished Request
+[  DEBUG] [2019-04-04 16:37:29,185] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61338/session/f49375892ed103ee69c013d16abff130/element/0.05136274181177636-1/value {"text": "", "value": [], "id": "0.05136274181177636-1", "sessionId": "f49375892ed103ee69c013d16abff130"}
+[  DEBUG] [2019-04-04 16:37:29,251] [2880] [connectionpool.py(396)] - http://127.0.0.1:61338 "POST /session/f49375892ed103ee69c013d16abff130/element/0.05136274181177636-1/value HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:29,251] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:29,252] [2880] [element.py(26)] - 发送文本或按键：('',) 到元素上：('id', 'nloginpwd')
+[   INFO] [2019-04-04 16:37:29,252] [2880] [base.py(16)] - 查找元素：('id', 'nloginpwd')
+[  DEBUG] [2019-04-04 16:37:29,252] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61338/session/f49375892ed103ee69c013d16abff130/element {"using": "id", "value": "nloginpwd", "sessionId": "f49375892ed103ee69c013d16abff130"}
+[  DEBUG] [2019-04-04 16:37:29,267] [2880] [connectionpool.py(396)] - http://127.0.0.1:61338 "POST /session/f49375892ed103ee69c013d16abff130/element HTTP/1.1" 200 103
+[  DEBUG] [2019-04-04 16:37:29,267] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:29,267] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:29,267] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61338/session/f49375892ed103ee69c013d16abff130/element/0.05136274181177636-2/clear {"id": "0.05136274181177636-2", "sessionId": "f49375892ed103ee69c013d16abff130"}
+[  DEBUG] [2019-04-04 16:37:29,287] [2880] [connectionpool.py(396)] - http://127.0.0.1:61338 "POST /session/f49375892ed103ee69c013d16abff130/element/0.05136274181177636-2/clear HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:29,287] [2880] [remote_connection.py(440)] - Finished Request
+[  DEBUG] [2019-04-04 16:37:29,287] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61338/session/f49375892ed103ee69c013d16abff130/element/0.05136274181177636-2/value {"text": "", "value": [], "id": "0.05136274181177636-2", "sessionId": "f49375892ed103ee69c013d16abff130"}
+[  DEBUG] [2019-04-04 16:37:29,311] [2880] [connectionpool.py(396)] - http://127.0.0.1:61338 "POST /session/f49375892ed103ee69c013d16abff130/element/0.05136274181177636-2/value HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:29,312] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:29,312] [2880] [element.py(21)] - 点击元素：('id', 'loginSubmit')
+[   INFO] [2019-04-04 16:37:29,312] [2880] [base.py(16)] - 查找元素：('id', 'loginSubmit')
+[  DEBUG] [2019-04-04 16:37:29,312] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61338/session/f49375892ed103ee69c013d16abff130/element {"using": "id", "value": "loginSubmit", "sessionId": "f49375892ed103ee69c013d16abff130"}
+[  DEBUG] [2019-04-04 16:37:29,321] [2880] [connectionpool.py(396)] - http://127.0.0.1:61338 "POST /session/f49375892ed103ee69c013d16abff130/element HTTP/1.1" 200 103
+[  DEBUG] [2019-04-04 16:37:29,322] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:29,322] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:29,322] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61338/session/f49375892ed103ee69c013d16abff130/element/0.05136274181177636-3/click {"id": "0.05136274181177636-3", "sessionId": "f49375892ed103ee69c013d16abff130"}
+[  DEBUG] [2019-04-04 16:37:29,384] [2880] [connectionpool.py(396)] - http://127.0.0.1:61338 "POST /session/f49375892ed103ee69c013d16abff130/element/0.05136274181177636-3/click HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:29,384] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:29,385] [2880] [base.py(16)] - 查找元素：('class name', 'msg-error')
+[  DEBUG] [2019-04-04 16:37:29,385] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61338/session/f49375892ed103ee69c013d16abff130/element {"using": "class name", "value": "msg-error", "sessionId": "f49375892ed103ee69c013d16abff130"}
+[  DEBUG] [2019-04-04 16:37:29,416] [2880] [connectionpool.py(396)] - http://127.0.0.1:61338 "POST /session/f49375892ed103ee69c013d16abff130/element HTTP/1.1" 200 103
+[  DEBUG] [2019-04-04 16:37:29,416] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:29,416] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:29,417] [2880] [remote_connection.py(389)] - GET http://127.0.0.1:61338/session/f49375892ed103ee69c013d16abff130/element/0.05136274181177636-4/text {"id": "0.05136274181177636-4", "sessionId": "f49375892ed103ee69c013d16abff130"}
+[  DEBUG] [2019-04-04 16:37:29,438] [2880] [connectionpool.py(396)] - http://127.0.0.1:61338 "GET /session/f49375892ed103ee69c013d16abff130/element/0.05136274181177636-4/text HTTP/1.1" 200 88
+[  DEBUG] [2019-04-04 16:37:29,439] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:29,439] [2880] [element.py(12)] - 获取元素的文本值：请输入用户名
+[   INFO] [2019-04-04 16:37:29,439] [2880] [browser.py(47)] - 关闭浏览器：chrome
+[  DEBUG] [2019-04-04 16:37:29,439] [2880] [remote_connection.py(389)] - DELETE http://127.0.0.1:61338/session/f49375892ed103ee69c013d16abff130 {"sessionId": "f49375892ed103ee69c013d16abff130"}
+[  DEBUG] [2019-04-04 16:37:30,417] [2880] [connectionpool.py(396)] - http://127.0.0.1:61338 "DELETE /session/f49375892ed103ee69c013d16abff130 HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:30,418] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:32,488] [2880] [Result.py(106)] - 测试执行通过： test_login_3___________2__ (Test_Case.用户中心.test_login_封装.TestLogin)
+[   INFO] [2019-04-04 16:37:32,488] [2880] [Result.py(59)] - 测试结束： test_login_3___________2__ (Test_Case.用户中心.test_login_封装.TestLogin)
+[   INFO] [2019-04-04 16:37:32,488] [2880] [Result.py(61)] - 耗时： 8.340232800000003
+[   INFO] [2019-04-04 16:37:32,489] [2880] [Result.py(48)] - 开始测试： test_login_4___liu________3__ (Test_Case.用户中心.test_login_封装.TestLogin)
+[  DEBUG] [2019-04-04 16:37:33,004] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61375/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+[  DEBUG] [2019-04-04 16:37:33,005] [2880] [connectionpool.py(208)] - Starting new HTTP connection (1): 127.0.0.1
+[  DEBUG] [2019-04-04 16:37:35,050] [2880] [connectionpool.py(396)] - http://127.0.0.1:61375 "POST /session HTTP/1.1" 200 997
+[  DEBUG] [2019-04-04 16:37:35,051] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:35,051] [2880] [browser.py(23)] - 打开浏览器：chrome
+[   INFO] [2019-04-04 16:37:35,051] [2880] [browser.py(25)] - 设置隐式等待 10s
+[  DEBUG] [2019-04-04 16:37:35,051] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61375/session/d60bc8cee8f778faf00a33f7eabb7246/timeouts/implicit_wait {"ms": 10000.0, "sessionId": "d60bc8cee8f778faf00a33f7eabb7246"}
+[  DEBUG] [2019-04-04 16:37:35,052] [2880] [connectionpool.py(396)] - http://127.0.0.1:61375 "POST /session/d60bc8cee8f778faf00a33f7eabb7246/timeouts/implicit_wait HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:35,053] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:35,053] [2880] [browser.py(28)] - 最大化浏览器
+[  DEBUG] [2019-04-04 16:37:35,053] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61375/session/d60bc8cee8f778faf00a33f7eabb7246/window/current/maximize {"windowHandle": "current", "sessionId": "d60bc8cee8f778faf00a33f7eabb7246"}
+[  DEBUG] [2019-04-04 16:37:36,184] [2880] [connectionpool.py(396)] - http://127.0.0.1:61375 "POST /session/d60bc8cee8f778faf00a33f7eabb7246/window/current/maximize HTTP/1.1" 200 110
+[  DEBUG] [2019-04-04 16:37:36,184] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:36,185] [2880] [browser.py(56)] - 打开网址：http://192.168.22.128/dsc/
+[  DEBUG] [2019-04-04 16:37:36,185] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61375/session/d60bc8cee8f778faf00a33f7eabb7246/url {"url": "http://192.168.22.128/dsc/", "sessionId": "d60bc8cee8f778faf00a33f7eabb7246"}
+[  DEBUG] [2019-04-04 16:37:37,730] [2880] [connectionpool.py(396)] - http://127.0.0.1:61375 "POST /session/d60bc8cee8f778faf00a33f7eabb7246/url HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:37,730] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:37,731] [2880] [element.py(21)] - 点击元素：('link text', '请登录')
+[   INFO] [2019-04-04 16:37:37,731] [2880] [base.py(16)] - 查找元素：('link text', '请登录')
+[  DEBUG] [2019-04-04 16:37:37,731] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61375/session/d60bc8cee8f778faf00a33f7eabb7246/element {"using": "link text", "value": "\u8bf7\u767b\u5f55", "sessionId": "d60bc8cee8f778faf00a33f7eabb7246"}
+[  DEBUG] [2019-04-04 16:37:37,785] [2880] [connectionpool.py(396)] - http://127.0.0.1:61375 "POST /session/d60bc8cee8f778faf00a33f7eabb7246/element HTTP/1.1" 200 103
+[  DEBUG] [2019-04-04 16:37:37,786] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:37,786] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:37,787] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61375/session/d60bc8cee8f778faf00a33f7eabb7246/element/0.25879037281161144-1/click {"id": "0.25879037281161144-1", "sessionId": "d60bc8cee8f778faf00a33f7eabb7246"}
+[  DEBUG] [2019-04-04 16:37:38,264] [2880] [connectionpool.py(396)] - http://127.0.0.1:61375 "POST /session/d60bc8cee8f778faf00a33f7eabb7246/element/0.25879037281161144-1/click HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:38,265] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:38,265] [2880] [test_login_封装.py(67)] - 输入用户名：liu
+[   INFO] [2019-04-04 16:37:38,265] [2880] [element.py(26)] - 发送文本或按键：('liu',) 到元素上：('id', 'username')
+[   INFO] [2019-04-04 16:37:38,265] [2880] [base.py(16)] - 查找元素：('id', 'username')
+[  DEBUG] [2019-04-04 16:37:38,266] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61375/session/d60bc8cee8f778faf00a33f7eabb7246/element {"using": "id", "value": "username", "sessionId": "d60bc8cee8f778faf00a33f7eabb7246"}
+[  DEBUG] [2019-04-04 16:37:38,295] [2880] [connectionpool.py(396)] - http://127.0.0.1:61375 "POST /session/d60bc8cee8f778faf00a33f7eabb7246/element HTTP/1.1" 200 102
+[  DEBUG] [2019-04-04 16:37:38,296] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:38,296] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:38,296] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61375/session/d60bc8cee8f778faf00a33f7eabb7246/element/0.4967421253237767-1/clear {"id": "0.4967421253237767-1", "sessionId": "d60bc8cee8f778faf00a33f7eabb7246"}
+[  DEBUG] [2019-04-04 16:37:38,342] [2880] [connectionpool.py(396)] - http://127.0.0.1:61375 "POST /session/d60bc8cee8f778faf00a33f7eabb7246/element/0.4967421253237767-1/clear HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:38,342] [2880] [remote_connection.py(440)] - Finished Request
+[  DEBUG] [2019-04-04 16:37:38,342] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61375/session/d60bc8cee8f778faf00a33f7eabb7246/element/0.4967421253237767-1/value {"text": "liu", "value": ["l", "i", "u"], "id": "0.4967421253237767-1", "sessionId": "d60bc8cee8f778faf00a33f7eabb7246"}
+[  DEBUG] [2019-04-04 16:37:38,440] [2880] [connectionpool.py(396)] - http://127.0.0.1:61375 "POST /session/d60bc8cee8f778faf00a33f7eabb7246/element/0.4967421253237767-1/value HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:38,440] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:38,441] [2880] [element.py(26)] - 发送文本或按键：('',) 到元素上：('id', 'nloginpwd')
+[   INFO] [2019-04-04 16:37:38,441] [2880] [base.py(16)] - 查找元素：('id', 'nloginpwd')
+[  DEBUG] [2019-04-04 16:37:38,442] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61375/session/d60bc8cee8f778faf00a33f7eabb7246/element {"using": "id", "value": "nloginpwd", "sessionId": "d60bc8cee8f778faf00a33f7eabb7246"}
+[  DEBUG] [2019-04-04 16:37:38,455] [2880] [connectionpool.py(396)] - http://127.0.0.1:61375 "POST /session/d60bc8cee8f778faf00a33f7eabb7246/element HTTP/1.1" 200 102
+[  DEBUG] [2019-04-04 16:37:38,456] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:38,456] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:38,456] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61375/session/d60bc8cee8f778faf00a33f7eabb7246/element/0.4967421253237767-2/clear {"id": "0.4967421253237767-2", "sessionId": "d60bc8cee8f778faf00a33f7eabb7246"}
+[  DEBUG] [2019-04-04 16:37:38,511] [2880] [connectionpool.py(396)] - http://127.0.0.1:61375 "POST /session/d60bc8cee8f778faf00a33f7eabb7246/element/0.4967421253237767-2/clear HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:38,512] [2880] [remote_connection.py(440)] - Finished Request
+[  DEBUG] [2019-04-04 16:37:38,512] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61375/session/d60bc8cee8f778faf00a33f7eabb7246/element/0.4967421253237767-2/value {"text": "", "value": [], "id": "0.4967421253237767-2", "sessionId": "d60bc8cee8f778faf00a33f7eabb7246"}
+[  DEBUG] [2019-04-04 16:37:38,540] [2880] [connectionpool.py(396)] - http://127.0.0.1:61375 "POST /session/d60bc8cee8f778faf00a33f7eabb7246/element/0.4967421253237767-2/value HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:38,540] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:38,540] [2880] [element.py(21)] - 点击元素：('id', 'loginSubmit')
+[   INFO] [2019-04-04 16:37:38,540] [2880] [base.py(16)] - 查找元素：('id', 'loginSubmit')
+[  DEBUG] [2019-04-04 16:37:38,540] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61375/session/d60bc8cee8f778faf00a33f7eabb7246/element {"using": "id", "value": "loginSubmit", "sessionId": "d60bc8cee8f778faf00a33f7eabb7246"}
+[  DEBUG] [2019-04-04 16:37:38,553] [2880] [connectionpool.py(396)] - http://127.0.0.1:61375 "POST /session/d60bc8cee8f778faf00a33f7eabb7246/element HTTP/1.1" 200 102
+[  DEBUG] [2019-04-04 16:37:38,554] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:38,554] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:38,554] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61375/session/d60bc8cee8f778faf00a33f7eabb7246/element/0.4967421253237767-3/click {"id": "0.4967421253237767-3", "sessionId": "d60bc8cee8f778faf00a33f7eabb7246"}
+[  DEBUG] [2019-04-04 16:37:38,627] [2880] [connectionpool.py(396)] - http://127.0.0.1:61375 "POST /session/d60bc8cee8f778faf00a33f7eabb7246/element/0.4967421253237767-3/click HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:38,628] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:38,628] [2880] [base.py(16)] - 查找元素：('class name', 'msg-error')
+[  DEBUG] [2019-04-04 16:37:38,628] [2880] [remote_connection.py(389)] - POST http://127.0.0.1:61375/session/d60bc8cee8f778faf00a33f7eabb7246/element {"using": "class name", "value": "msg-error", "sessionId": "d60bc8cee8f778faf00a33f7eabb7246"}
+[  DEBUG] [2019-04-04 16:37:38,644] [2880] [connectionpool.py(396)] - http://127.0.0.1:61375 "POST /session/d60bc8cee8f778faf00a33f7eabb7246/element HTTP/1.1" 200 102
+[  DEBUG] [2019-04-04 16:37:38,645] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:38,645] [2880] [base.py(23)] - 查找元素成功
+[  DEBUG] [2019-04-04 16:37:38,645] [2880] [remote_connection.py(389)] - GET http://127.0.0.1:61375/session/d60bc8cee8f778faf00a33f7eabb7246/element/0.4967421253237767-4/text {"id": "0.4967421253237767-4", "sessionId": "d60bc8cee8f778faf00a33f7eabb7246"}
+[  DEBUG] [2019-04-04 16:37:38,666] [2880] [connectionpool.py(396)] - http://127.0.0.1:61375 "GET /session/d60bc8cee8f778faf00a33f7eabb7246/element/0.4967421253237767-4/text HTTP/1.1" 200 85
+[  DEBUG] [2019-04-04 16:37:38,666] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:38,666] [2880] [element.py(12)] - 获取元素的文本值：请输入密码
+[   INFO] [2019-04-04 16:37:38,667] [2880] [browser.py(47)] - 关闭浏览器：chrome
+[  DEBUG] [2019-04-04 16:37:38,667] [2880] [remote_connection.py(389)] - DELETE http://127.0.0.1:61375/session/d60bc8cee8f778faf00a33f7eabb7246 {"sessionId": "d60bc8cee8f778faf00a33f7eabb7246"}
+[  DEBUG] [2019-04-04 16:37:38,752] [2880] [connectionpool.py(396)] - http://127.0.0.1:61375 "DELETE /session/d60bc8cee8f778faf00a33f7eabb7246 HTTP/1.1" 200 72
+[  DEBUG] [2019-04-04 16:37:38,753] [2880] [remote_connection.py(440)] - Finished Request
+[   INFO] [2019-04-04 16:37:40,887] [2880] [Result.py(106)] - 测试执行通过： test_login_4___liu________3__ (Test_Case.用户中心.test_login_封装.TestLogin)
+[   INFO] [2019-04-04 16:37:40,888] [2880] [Result.py(59)] - 测试结束： test_login_4___liu________3__ (Test_Case.用户中心.test_login_封装.TestLogin)
+[   INFO] [2019-04-04 16:37:40,888] [2880] [Result.py(61)] - 耗时： 8.398740800000002
+[   INFO] [2019-04-04 16:37:40,889] [1112] [HTMLReport.py(130)] - 
+Pass	test_login_1___liu01____123456____1__ (Test_Case.用户中心.test_login_封装.TestLogin)	登录的测试用例
+
+        :param username: 用户名
+        :param password: 密码
+        :param assert_type: 断言类型：1-成功，2-用户名或用户名与密码都为空，3-密码为空
+        :return:
+        
+Pass	test_login_2_______123465____2__ (Test_Case.用户中心.test_login_封装.TestLogin)	登录的测试用例
+
+        :param username: 用户名
+        :param password: 密码
+        :param assert_type: 断言类型：1-成功，2-用户名或用户名与密码都为空，3-密码为空
+        :return:
+        
+Pass	test_login_3___________2__ (Test_Case.用户中心.test_login_封装.TestLogin)	登录的测试用例
+
+        :param username: 用户名
+        :param password: 密码
+        :param assert_type: 断言类型：1-成功，2-用户名或用户名与密码都为空，3-密码为空
+        :return:
+        
+Pass	test_login_4___liu________3__ (Test_Case.用户中心.test_login_封装.TestLogin)	登录的测试用例
+
+        :param username: 用户名
+        :param password: 密码
+        :param assert_type: 断言类型：1-成功，2-用户名或用户名与密码都为空，3-密码为空
+        :return:
+        
+
+[   INFO] [2019-04-04 16:37:40,922] [1112] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:34.502437
+共计执行用例数量：4
+执行成功用例数量：4
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：0

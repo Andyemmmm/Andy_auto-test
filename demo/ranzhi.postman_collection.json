@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "a012c2ab-9316-4b28-b48f-a73259bd8c70",
+		"name": "ranzhi",
+		"description": "然之项目",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "打开首页",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3d7fc6b1-8406-4f77-a030-7014e457cd57",
+						"exec": [
+							"// v.random = \"4afd95216c490a2696b31c0239e23547\";",
+							"// 通过正则表达式从响应中获取随机字符串",
+							"var random = pm.response.text().match('v.random = \"(.*?)\";')[1];",
+							"console.log(random);",
+							"",
+							"// 将随机值存入环境变量中",
+							"pm.environment.set(\"random\", random);",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": " Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": " text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": " zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://192.168.2.252/ranzhi/www/sys/index.php?m=user&f=login",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"2",
+						"252"
+					],
+					"path": [
+						"ranzhi",
+						"www",
+						"sys",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "m",
+							"value": "user"
+						},
+						{
+							"key": "f",
+							"value": "login"
+						}
+					]
+				},
+				"description": "从首页请求中获取random字段"
+			},
+			"response": []
+		},
+		{
+			"name": "登录请求",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "39fa849d-26f7-4c1e-8a5a-9dc075f31f72",
+						"exec": [
+							"var random = pm.environment.get(\"random\"); ",
+							"",
+							"pm.environment.set(\"account\", data.account);",
+							"pm.environment.set(\"password\", data.password);",
+							"",
+							"var password = pm.environment.get(\"password\"); ",
+							"var account = pm.environment.get(\"account\"); ",
+							"",
+							"// 加密",
+							"var pwd1 = CryptoJS.MD5(password).toString();",
+							"var pwd2 = CryptoJS.MD5(pwd1 + account).toString();",
+							"var pwd3 = CryptoJS.MD5(pwd2 + random).toString();",
+							"",
+							"// 存入环境变量",
+							"pm.environment.set(\"rawPassword\", pwd1);",
+							"pm.environment.set(\"pwd3\", pwd3);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "40f92f47-f719-4f9e-bb62-bdb9b6e02f3e",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Your test name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.result).to.eql(\"success\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": " Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": " application/json, text/javascript, */*; q=0.01",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": " zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					},
+					{
+						"key": "Connection",
+						"value": " keep-alive",
+						"type": "text"
+					},
+					{
+						"key": "X-Requested-With",
+						"value": " XMLHttpRequest",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "account",
+							"value": "{{account}}",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "{{pwd3}}",
+							"type": "text"
+						},
+						{
+							"key": "referer",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "rawPassword",
+							"value": "{{rawPassword}}",
+							"type": "text"
+						},
+						{
+							"key": "keepLogin",
+							"value": "false",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.2.252/ranzhi/www/sys/index.php?m=user&f=login",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"2",
+						"252"
+					],
+					"path": [
+						"ranzhi",
+						"www",
+						"sys",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "m",
+							"value": "user"
+						},
+						{
+							"key": "f",
+							"value": "login"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "退出登录",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": " Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": " text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": " zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://192.168.2.252/ranzhi/www/sys/index.php?m=user&f=logout",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"2",
+						"252"
+					],
+					"path": [
+						"ranzhi",
+						"www",
+						"sys",
+						"index.php"
+					],
+					"query": [
+						{
+							"key": "m",
+							"value": "user"
+						},
+						{
+							"key": "f",
+							"value": "logout"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,15 @@
+1、限速
+	1.1、修改 FidlerScript
+		if (m_SimulateModem) {
+			// 每上传 1kb 数据需要 300ms
+			oSession["request-trickle-delay"] = "300"; 
+			// 每下载 1KB 数据需要 150ms
+			oSession["response-trickle-delay"] = "150"; 
+		}
+	1.2、启用限速
+		Rules -> Performance -> Simulate Modem Speeds
+		
+2、篡改数据
+3、重定向
+4、发送自定义接口
+5、手机抓包

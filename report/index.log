@@ -1,0 +1,510 @@
+[   INFO] [2019-07-08 13:38:05,286] [15900] [HTMLReport.py(101)] - 预计并发线程数：1
+[   INFO] [2019-07-08 13:38:05,287] [15952] [Result.py(48)] - 开始测试： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 13:38:05,287] [15952] [test_login.py(17)] - 初始化一个session
+[  DEBUG] [2019-07-08 13:38:05,417] [15952] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 13:38:06,464] [15952] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST //member/employeelogin HTTP/1.1" 200 188
+[   INFO] [2019-07-08 13:38:06,464] [15952] [test_login.py(39)] - 200
+[   INFO] [2019-07-08 13:38:06,464] [15952] [test_login.py(40)] - http://test.dental360.cn:8383//member/employeelogin
+[   INFO] [2019-07-08 13:38:06,464] [15952] [test_login.py(41)] - {
+  "code": 1,
+  "info": "登录成功",
+  "pageno": 0,
+  "pagesize": 0,
+  "totalcount": 0,
+  "list": {
+    "cliniccount": 1,
+    "samepassword": "1"
+  },
+  "main": null,
+  "command": ""
+}
+[   INFO] [2019-07-08 13:38:06,464] [15952] [test_login.py(42)] - {'code': 1, 'info': '登录成功', 'pageno': 0, 'pagesize': 0, 'totalcount': 0, 'list': {'cliniccount': 1, 'samepassword': '1'}, 'main': None, 'command': ''}
+[   INFO] [2019-07-08 13:38:06,464] [15952] [test_login.py(21)] - 关闭session
+[   INFO] [2019-07-08 13:38:06,464] [15952] [Result.py(106)] - 测试执行通过： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 13:38:06,464] [15952] [Result.py(59)] - 测试结束： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 13:38:06,464] [15952] [Result.py(61)] - 耗时： 1.1914009190000001
+[   INFO] [2019-07-08 13:38:06,464] [15900] [HTMLReport.py(130)] - 
+Pass	test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+
+[   INFO] [2019-07-08 13:38:06,479] [15900] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:01.178977
+共计执行用例数量：1
+执行成功用例数量：1
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：0
+[   INFO] [2019-07-08 14:50:34,714] [3268] [HTMLReport.py(101)] - 预计并发线程数：1
+[   INFO] [2019-07-08 14:50:34,715] [8864] [Result.py(48)] - 开始测试： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 14:50:34,715] [8864] [test_login.py(17)] - 初始化一个session
+[  DEBUG] [2019-07-08 14:50:34,730] [8864] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 14:50:36,854] [8864] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST //member/employeelogin HTTP/1.1" 200 188
+[   INFO] [2019-07-08 14:50:36,880] [8864] [test_login.py(42)] - 返回结果：
+[   INFO] [2019-07-08 14:50:36,882] [8864] [test_login.py(21)] - 关闭session
+[   INFO] [2019-07-08 14:50:36,883] [8864] [Result.py(106)] - 测试执行通过： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 14:50:36,884] [8864] [Result.py(59)] - 测试结束： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 14:50:36,884] [8864] [Result.py(61)] - 耗时： 2.16951915
+[   INFO] [2019-07-08 14:50:36,885] [8864] [Result.py(48)] - 开始测试： test_新建患者 (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 14:50:36,885] [8864] [test_新建患者.py(17)] - 初始化一个session
+[   INFO] [2019-07-08 14:50:36,886] [8864] [test_新建患者.py(22)] - 关闭会话
+[  ERROR] [2019-07-08 14:50:36,887] [8864] [Result.py(125)] - 测试产生错误： test_新建患者 (testcase.test_新建患者.Test_新建患者)
+TypeError: test_新建患者() missing 3 required positional arguments: 'dentalid', 'doctorname', and 'password'
+
+[   INFO] [2019-07-08 14:50:36,887] [8864] [Result.py(59)] - 测试结束： test_新建患者 (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 14:50:36,888] [8864] [Result.py(61)] - 耗时： 0.002185755000000178
+[   INFO] [2019-07-08 14:50:36,889] [3268] [HTMLReport.py(130)] - 
+Pass	test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+
+[  ERROR] [2019-07-08 14:50:36,890] [3268] [HTMLReport.py(132)] - 
+Error	test_新建患者 (testcase.test_新建患者.Test_新建患者)
+
+[   INFO] [2019-07-08 14:50:36,946] [3268] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:02.176758
+共计执行用例数量：2
+执行成功用例数量：1
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2019-07-08 14:51:51,425] [5412] [HTMLReport.py(101)] - 预计并发线程数：1
+[   INFO] [2019-07-08 14:51:51,426] [9848] [Result.py(48)] - 开始测试： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 14:51:51,427] [9848] [test_login.py(17)] - 初始化一个session
+[  DEBUG] [2019-07-08 14:51:51,442] [9848] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 14:51:53,950] [9848] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST //member/employeelogin HTTP/1.1" 200 188
+[   INFO] [2019-07-08 14:51:53,978] [9848] [test_login.py(42)] - 返回结果：
+[   INFO] [2019-07-08 14:51:53,979] [9848] [test_login.py(21)] - 关闭session
+[   INFO] [2019-07-08 14:51:53,979] [9848] [Result.py(106)] - 测试执行通过： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 14:51:53,980] [9848] [Result.py(59)] - 测试结束： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 14:51:53,980] [9848] [Result.py(61)] - 耗时： 2.553539494
+[   INFO] [2019-07-08 14:51:53,980] [9848] [Result.py(48)] - 开始测试： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 14:51:53,981] [9848] [test_新建患者.py(17)] - 初始化一个session
+[  DEBUG] [2019-07-08 14:51:53,984] [9848] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 14:51:54,365] [9848] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST //member/employeelogin HTTP/1.1" 200 188
+[   INFO] [2019-07-08 14:51:54,399] [9848] [test_新建患者.py(42)] - 返回结果：
+[   INFO] [2019-07-08 14:51:54,400] [9848] [test_新建患者.py(44)] - 新建患者
+[  DEBUG] [2019-07-08 14:51:54,403] [9848] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 14:51:54,498] [9848] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST /patient/addpatient HTTP/1.1" 200 175
+[   INFO] [2019-07-08 14:51:54,500] [9848] [test_新建患者.py(62)] - 200
+[   INFO] [2019-07-08 14:51:54,501] [9848] [test_新建患者.py(63)] - http://test.dental360.cn:8383/patient/addpatient
+[   INFO] [2019-07-08 14:51:54,501] [9848] [test_新建患者.py(64)] - {
+  "code": 0,
+  "info": "登录后超过时间未操作,请重新登录",
+  "pageno": 0,
+  "pagesize": 0,
+  "totalcount": 0,
+  "list": null,
+  "main": null,
+  "command": ""
+}
+[   INFO] [2019-07-08 14:51:54,502] [9848] [test_新建患者.py(65)] - {'code': 0, 'info': '登录后超过时间未操作,请重新登录', 'pageno': 0, 'pagesize': 0, 'totalcount': 0, 'list': None, 'main': None, 'command': ''}
+[   INFO] [2019-07-08 14:51:54,503] [9848] [test_新建患者.py(22)] - 关闭会话
+[WARNING] [2019-07-08 14:51:54,504] [9848] [Result.py(144)] - 测试未通过： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\test_dentalink\trunk\Test_dental\testcase\test_新建患者.py", line 67, in test_新建患者
+    self.assertEqual(1,respose.json().get('code'))
+AssertionError: 1 != 0
+
+[   INFO] [2019-07-08 14:51:54,505] [9848] [Result.py(59)] - 测试结束： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 14:51:54,506] [9848] [Result.py(61)] - 耗时： 0.5240387850000001
+[   INFO] [2019-07-08 14:51:54,507] [5412] [HTMLReport.py(130)] - 
+Pass	test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+
+[  ERROR] [2019-07-08 14:51:54,507] [5412] [HTMLReport.py(132)] - 
+Fail	test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+
+[   INFO] [2019-07-08 14:51:54,556] [5412] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:03.082232
+共计执行用例数量：2
+执行成功用例数量：1
+执行失败用例数量：1
+跳过执行用例数量：0
+产生异常用例数量：0
+[   INFO] [2019-07-08 14:54:43,828] [7284] [HTMLReport.py(101)] - 预计并发线程数：1
+[   INFO] [2019-07-08 14:54:43,829] [14144] [Result.py(48)] - 开始测试： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 14:54:43,829] [14144] [test_login.py(17)] - 初始化一个session
+[  DEBUG] [2019-07-08 14:54:43,844] [14144] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 14:54:44,790] [14144] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST //member/employeelogin HTTP/1.1" 200 188
+[   INFO] [2019-07-08 14:54:44,809] [14144] [test_login.py(42)] - 返回结果：
+[   INFO] [2019-07-08 14:54:44,809] [14144] [test_login.py(21)] - 关闭session
+[   INFO] [2019-07-08 14:54:44,810] [14144] [Result.py(106)] - 测试执行通过： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 14:54:44,810] [14144] [Result.py(59)] - 测试结束： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 14:54:44,810] [14144] [Result.py(61)] - 耗时： 0.9817433649999999
+[   INFO] [2019-07-08 14:54:44,811] [14144] [Result.py(48)] - 开始测试： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 14:54:44,811] [14144] [test_新建患者.py(17)] - 初始化一个session
+[  DEBUG] [2019-07-08 14:54:44,814] [14144] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 14:54:45,197] [14144] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST //member/employeelogin HTTP/1.1" 200 188
+[   INFO] [2019-07-08 14:54:45,223] [14144] [test_新建患者.py(43)] - 返回结果：
+[   INFO] [2019-07-08 14:54:45,224] [14144] [test_新建患者.py(45)] - 新建患者
+[  DEBUG] [2019-07-08 14:54:45,229] [14144] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 14:54:45,317] [14144] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST /patient/addpatient HTTP/1.1" 200 175
+[   INFO] [2019-07-08 14:54:45,319] [14144] [test_新建患者.py(63)] - 200
+[   INFO] [2019-07-08 14:54:45,320] [14144] [test_新建患者.py(64)] - http://test.dental360.cn:8383/patient/addpatient
+[   INFO] [2019-07-08 14:54:45,320] [14144] [test_新建患者.py(65)] - {
+  "code": 0,
+  "info": "登录后超过时间未操作,请重新登录",
+  "pageno": 0,
+  "pagesize": 0,
+  "totalcount": 0,
+  "list": null,
+  "main": null,
+  "command": ""
+}
+[   INFO] [2019-07-08 14:54:45,321] [14144] [test_新建患者.py(66)] - {'code': 0, 'info': '登录后超过时间未操作,请重新登录', 'pageno': 0, 'pagesize': 0, 'totalcount': 0, 'list': None, 'main': None, 'command': ''}
+[   INFO] [2019-07-08 14:54:45,322] [14144] [test_新建患者.py(22)] - 关闭会话
+[WARNING] [2019-07-08 14:54:45,325] [14144] [Result.py(144)] - 测试未通过： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\test_dentalink\trunk\Test_dental\testcase\test_新建患者.py", line 68, in test_新建患者
+    self.assertEqual(1,respose.json().get('code'))
+AssertionError: 1 != 0
+
+[   INFO] [2019-07-08 14:54:45,326] [14144] [Result.py(59)] - 测试结束： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 14:54:45,327] [14144] [Result.py(61)] - 耗时： 0.5145793609999998
+[   INFO] [2019-07-08 14:54:45,328] [7284] [HTMLReport.py(130)] - 
+Pass	test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+
+[  ERROR] [2019-07-08 14:54:45,328] [7284] [HTMLReport.py(132)] - 
+Fail	test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+
+[   INFO] [2019-07-08 14:54:45,376] [7284] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:01.500148
+共计执行用例数量：2
+执行成功用例数量：1
+执行失败用例数量：1
+跳过执行用例数量：0
+产生异常用例数量：0
+[   INFO] [2019-07-08 14:56:27,254] [13464] [HTMLReport.py(101)] - 预计并发线程数：1
+[   INFO] [2019-07-08 14:56:27,255] [7892] [Result.py(48)] - 开始测试： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 14:56:27,255] [7892] [test_login.py(17)] - 初始化一个session
+[  DEBUG] [2019-07-08 14:56:27,271] [7892] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 14:56:27,702] [7892] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST //member/employeelogin HTTP/1.1" 200 188
+[   INFO] [2019-07-08 14:56:27,729] [7892] [test_login.py(42)] - 返回结果：
+[   INFO] [2019-07-08 14:56:27,730] [7892] [test_login.py(21)] - 关闭session
+[   INFO] [2019-07-08 14:56:27,730] [7892] [Result.py(106)] - 测试执行通过： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 14:56:27,730] [7892] [Result.py(59)] - 测试结束： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 14:56:27,731] [7892] [Result.py(61)] - 耗时： 0.474893791
+[   INFO] [2019-07-08 14:56:27,731] [7892] [Result.py(48)] - 开始测试： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 14:56:27,731] [7892] [test_新建患者.py(17)] - 初始化一个session
+[  DEBUG] [2019-07-08 14:56:27,734] [7892] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 14:56:28,433] [7892] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST //member/employeelogin HTTP/1.1" 200 188
+[   INFO] [2019-07-08 14:56:28,462] [7892] [test_新建患者.py(43)] - 返回结果：
+[   INFO] [2019-07-08 14:56:28,463] [7892] [test_新建患者.py(45)] - 新建患者
+[  DEBUG] [2019-07-08 14:56:28,915] [7892] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST /patient/addpatient HTTP/1.1" 200 193
+[   INFO] [2019-07-08 14:56:28,916] [7892] [test_新建患者.py(63)] - 200
+[   INFO] [2019-07-08 14:56:28,917] [7892] [test_新建患者.py(64)] - http://test.dental360.cn:8383/patient/addpatient
+[   INFO] [2019-07-08 14:56:28,917] [7892] [test_新建患者.py(65)] - {
+  "code": 1,
+  "info": "ok",
+  "pageno": 0,
+  "pagesize": 0,
+  "totalcount": 0,
+  "list": {
+    "customerid": "368117708799803392",
+    "regtriage": "0"
+  },
+  "main": null,
+  "command": ""
+}
+[   INFO] [2019-07-08 14:56:28,918] [7892] [test_新建患者.py(66)] - {'code': 1, 'info': 'ok', 'pageno': 0, 'pagesize': 0, 'totalcount': 0, 'list': {'customerid': '368117708799803392', 'regtriage': '0'}, 'main': None, 'command': ''}
+[   INFO] [2019-07-08 14:56:28,919] [7892] [test_新建患者.py(22)] - 关闭会话
+[WARNING] [2019-07-08 14:56:28,920] [7892] [Result.py(144)] - 测试未通过： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\test_dentalink\trunk\Test_dental\testcase\test_新建患者.py", line 70, in test_新建患者
+    self.assertEqual('ok',respose.json()).get('info')
+AssertionError: 'ok' != {'code': 1, 'info': 'ok', 'pageno': 0, 'p[117 chars]: ''}
+
+[   INFO] [2019-07-08 14:56:28,921] [7892] [Result.py(59)] - 测试结束： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 14:56:28,922] [7892] [Result.py(61)] - 耗时： 1.190220596
+[   INFO] [2019-07-08 14:56:28,923] [13464] [HTMLReport.py(130)] - 
+Pass	test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+
+[  ERROR] [2019-07-08 14:56:28,923] [13464] [HTMLReport.py(132)] - 
+Fail	test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+
+[   INFO] [2019-07-08 14:56:28,977] [13464] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:01.669047
+共计执行用例数量：2
+执行成功用例数量：1
+执行失败用例数量：1
+跳过执行用例数量：0
+产生异常用例数量：0
+[   INFO] [2019-07-08 14:58:47,693] [7272] [HTMLReport.py(101)] - 预计并发线程数：1
+[   INFO] [2019-07-08 14:58:47,694] [3368] [Result.py(48)] - 开始测试： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 14:58:47,694] [3368] [test_login.py(17)] - 初始化一个session
+[  DEBUG] [2019-07-08 14:58:47,711] [3368] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 14:58:48,301] [3368] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST //member/employeelogin HTTP/1.1" 200 188
+[   INFO] [2019-07-08 14:58:48,314] [3368] [test_login.py(42)] - 返回结果：
+[   INFO] [2019-07-08 14:58:48,315] [3368] [test_login.py(21)] - 关闭session
+[   INFO] [2019-07-08 14:58:48,316] [3368] [Result.py(106)] - 测试执行通过： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 14:58:48,316] [3368] [Result.py(59)] - 测试结束： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 14:58:48,317] [3368] [Result.py(61)] - 耗时： 0.62276149
+[   INFO] [2019-07-08 14:58:48,317] [3368] [Result.py(48)] - 开始测试： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 14:58:48,318] [3368] [test_新建患者.py(17)] - 初始化一个session
+[  DEBUG] [2019-07-08 14:58:48,321] [3368] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 14:58:48,931] [3368] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST //member/employeelogin HTTP/1.1" 200 188
+[   INFO] [2019-07-08 14:58:48,967] [3368] [test_新建患者.py(43)] - 返回结果：
+[   INFO] [2019-07-08 14:58:48,968] [3368] [test_新建患者.py(45)] - 新建患者
+[  DEBUG] [2019-07-08 14:58:49,182] [3368] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST /patient/addpatient HTTP/1.1" 200 193
+[   INFO] [2019-07-08 14:58:49,183] [3368] [test_新建患者.py(63)] - 200
+[   INFO] [2019-07-08 14:58:49,184] [3368] [test_新建患者.py(64)] - http://test.dental360.cn:8383/patient/addpatient
+[   INFO] [2019-07-08 14:58:49,184] [3368] [test_新建患者.py(65)] - {
+  "code": 1,
+  "info": "ok",
+  "pageno": 0,
+  "pagesize": 0,
+  "totalcount": 0,
+  "list": {
+    "customerid": "368118298086932480",
+    "regtriage": "0"
+  },
+  "main": null,
+  "command": ""
+}
+[   INFO] [2019-07-08 14:58:49,185] [3368] [test_新建患者.py(66)] - {'code': 1, 'info': 'ok', 'pageno': 0, 'pagesize': 0, 'totalcount': 0, 'list': {'customerid': '368118298086932480', 'regtriage': '0'}, 'main': None, 'command': ''}
+[   INFO] [2019-07-08 14:58:49,186] [3368] [test_新建患者.py(22)] - 关闭会话
+[  ERROR] [2019-07-08 14:58:49,188] [3368] [Result.py(125)] - 测试产生错误： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\test_dentalink\trunk\Test_dental\testcase\test_新建患者.py", line 74, in test_新建患者
+    f.write(customerid)
+TypeError: write() argument must be str, not None
+
+[   INFO] [2019-07-08 14:58:49,188] [3368] [Result.py(59)] - 测试结束： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 14:58:49,189] [3368] [Result.py(61)] - 耗时： 0.869826075
+[   INFO] [2019-07-08 14:58:49,190] [7272] [HTMLReport.py(130)] - 
+Pass	test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+
+[  ERROR] [2019-07-08 14:58:49,190] [7272] [HTMLReport.py(132)] - 
+Error	test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+
+[   INFO] [2019-07-08 14:58:49,232] [7272] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:01.496140
+共计执行用例数量：2
+执行成功用例数量：1
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2019-07-08 15:19:16,029] [10788] [HTMLReport.py(101)] - 预计并发线程数：1
+[   INFO] [2019-07-08 15:19:16,045] [2504] [Result.py(48)] - 开始测试： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 15:19:16,045] [2504] [test_login.py(17)] - 初始化一个session
+[  DEBUG] [2019-07-08 15:19:16,107] [2504] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 15:19:18,229] [2504] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST //member/employeelogin HTTP/1.1" 200 188
+[   INFO] [2019-07-08 15:19:18,307] [2504] [test_login.py(42)] - 返回结果：
+[   INFO] [2019-07-08 15:19:18,307] [2504] [test_login.py(21)] - 关闭session
+[   INFO] [2019-07-08 15:19:18,307] [2504] [Result.py(106)] - 测试执行通过： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 15:19:18,307] [2504] [Result.py(59)] - 测试结束： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 15:19:18,307] [2504] [Result.py(61)] - 耗时： 2.265624615
+[   INFO] [2019-07-08 15:19:18,307] [2504] [Result.py(48)] - 开始测试： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 15:19:18,307] [2504] [test_新建患者.py(17)] - 初始化一个session
+[  DEBUG] [2019-07-08 15:19:18,307] [2504] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 15:19:18,729] [2504] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST //member/employeelogin HTTP/1.1" 200 188
+[   INFO] [2019-07-08 15:19:18,792] [2504] [test_新建患者.py(43)] - 返回结果：
+[   INFO] [2019-07-08 15:19:18,792] [2504] [test_新建患者.py(45)] - 新建患者
+[  DEBUG] [2019-07-08 15:19:19,120] [2504] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST /patient/addpatient HTTP/1.1" 200 193
+[   INFO] [2019-07-08 15:19:19,120] [2504] [test_新建患者.py(63)] - 200
+[   INFO] [2019-07-08 15:19:19,120] [2504] [test_新建患者.py(64)] - http://test.dental360.cn:8383/patient/addpatient
+[   INFO] [2019-07-08 15:19:19,120] [2504] [test_新建患者.py(65)] - {
+  "code": 1,
+  "info": "ok",
+  "pageno": 0,
+  "pagesize": 0,
+  "totalcount": 0,
+  "list": {
+    "customerid": "368123456552370176",
+    "regtriage": "0"
+  },
+  "main": null,
+  "command": ""
+}
+[   INFO] [2019-07-08 15:19:19,120] [2504] [test_新建患者.py(66)] - {'code': 1, 'info': 'ok', 'pageno': 0, 'pagesize': 0, 'totalcount': 0, 'list': {'customerid': '368123456552370176', 'regtriage': '0'}, 'main': None, 'command': ''}
+[   INFO] [2019-07-08 15:19:19,120] [2504] [test_新建患者.py(22)] - 关闭会话
+[  ERROR] [2019-07-08 15:19:19,120] [2504] [Result.py(125)] - 测试产生错误： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\test_dentalink\trunk\Test_dental\testcase\test_新建患者.py", line 73, in test_新建患者
+    with open('data/患者ID.txt','wb',encoding='utf-8')as f:
+ValueError: binary mode doesn't take an encoding argument
+
+[   INFO] [2019-07-08 15:19:19,120] [2504] [Result.py(59)] - 测试结束： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 15:19:19,120] [2504] [Result.py(61)] - 耗时： 0.8193307910000001
+[   INFO] [2019-07-08 15:19:19,120] [10788] [HTMLReport.py(130)] - 
+Pass	test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+
+[  ERROR] [2019-07-08 15:19:19,120] [10788] [HTMLReport.py(132)] - 
+Error	test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+
+[   INFO] [2019-07-08 15:19:19,166] [10788] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:03.090363
+共计执行用例数量：2
+执行成功用例数量：1
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2019-07-08 15:21:24,699] [9540] [HTMLReport.py(101)] - 预计并发线程数：1
+[   INFO] [2019-07-08 15:21:24,700] [1380] [Result.py(48)] - 开始测试： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 15:21:24,700] [1380] [test_login.py(17)] - 初始化一个session
+[  DEBUG] [2019-07-08 15:21:24,715] [1380] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 15:21:25,571] [1380] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST //member/employeelogin HTTP/1.1" 200 188
+[   INFO] [2019-07-08 15:21:25,597] [1380] [test_login.py(42)] - 返回结果：
+[   INFO] [2019-07-08 15:21:25,597] [1380] [test_login.py(21)] - 关闭session
+[   INFO] [2019-07-08 15:21:25,598] [1380] [Result.py(106)] - 测试执行通过： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 15:21:25,598] [1380] [Result.py(59)] - 测试结束： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 15:21:25,598] [1380] [Result.py(61)] - 耗时： 0.898454371
+[   INFO] [2019-07-08 15:21:25,599] [1380] [Result.py(48)] - 开始测试： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 15:21:25,599] [1380] [test_新建患者.py(17)] - 初始化一个session
+[  DEBUG] [2019-07-08 15:21:25,601] [1380] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 15:21:25,981] [1380] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST //member/employeelogin HTTP/1.1" 200 188
+[   INFO] [2019-07-08 15:21:26,010] [1380] [test_新建患者.py(43)] - 返回结果：
+[   INFO] [2019-07-08 15:21:26,010] [1380] [test_新建患者.py(45)] - 新建患者
+[  DEBUG] [2019-07-08 15:21:26,275] [1380] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST /patient/addpatient HTTP/1.1" 200 193
+[   INFO] [2019-07-08 15:21:26,276] [1380] [test_新建患者.py(63)] - 200
+[   INFO] [2019-07-08 15:21:26,276] [1380] [test_新建患者.py(64)] - http://test.dental360.cn:8383/patient/addpatient
+[   INFO] [2019-07-08 15:21:26,277] [1380] [test_新建患者.py(65)] - {
+  "code": 1,
+  "info": "ok",
+  "pageno": 0,
+  "pagesize": 0,
+  "totalcount": 0,
+  "list": {
+    "customerid": "368123990139142144",
+    "regtriage": "0"
+  },
+  "main": null,
+  "command": ""
+}
+[   INFO] [2019-07-08 15:21:26,277] [1380] [test_新建患者.py(66)] - {'code': 1, 'info': 'ok', 'pageno': 0, 'pagesize': 0, 'totalcount': 0, 'list': {'customerid': '368123990139142144', 'regtriage': '0'}, 'main': None, 'command': ''}
+[   INFO] [2019-07-08 15:21:26,278] [1380] [test_新建患者.py(22)] - 关闭会话
+[  ERROR] [2019-07-08 15:21:26,278] [1380] [Result.py(125)] - 测试产生错误： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+Traceback (most recent call last):
+  File "C:\Program Files\Python37\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "D:\test_dentalink\trunk\Test_dental\testcase\test_新建患者.py", line 74, in test_新建患者
+    f.write(customerid)
+TypeError: a bytes-like object is required, not 'NoneType'
+
+[   INFO] [2019-07-08 15:21:26,279] [1380] [Result.py(59)] - 测试结束： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 15:21:26,279] [1380] [Result.py(61)] - 耗时： 0.6794667160000001
+[   INFO] [2019-07-08 15:21:26,279] [9540] [HTMLReport.py(130)] - 
+Pass	test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+
+[  ERROR] [2019-07-08 15:21:26,280] [9540] [HTMLReport.py(132)] - 
+Error	test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+
+[   INFO] [2019-07-08 15:21:26,305] [9540] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:01.580090
+共计执行用例数量：2
+执行成功用例数量：1
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：1
+[   INFO] [2019-07-08 15:29:56,607] [13796] [HTMLReport.py(101)] - 预计并发线程数：1
+[   INFO] [2019-07-08 15:29:56,608] [5580] [Result.py(48)] - 开始测试： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 15:29:56,608] [5580] [test_login.py(17)] - 初始化一个session
+[  DEBUG] [2019-07-08 15:29:56,622] [5580] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 15:29:57,093] [5580] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST //member/employeelogin HTTP/1.1" 200 188
+[   INFO] [2019-07-08 15:29:57,124] [5580] [test_login.py(42)] - 返回结果：
+[   INFO] [2019-07-08 15:29:57,125] [5580] [test_login.py(21)] - 关闭session
+[   INFO] [2019-07-08 15:29:57,125] [5580] [Result.py(106)] - 测试执行通过： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 15:29:57,126] [5580] [Result.py(59)] - 测试结束： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 15:29:57,126] [5580] [Result.py(61)] - 耗时： 0.517197833
+[   INFO] [2019-07-08 15:29:57,126] [5580] [Result.py(48)] - 开始测试： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 15:29:57,127] [5580] [test_新建患者.py(17)] - 初始化一个session
+[  DEBUG] [2019-07-08 15:29:57,129] [5580] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 15:29:57,576] [5580] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST //member/employeelogin HTTP/1.1" 200 188
+[   INFO] [2019-07-08 15:29:57,605] [5580] [test_新建患者.py(43)] - 返回结果：
+[   INFO] [2019-07-08 15:29:57,606] [5580] [test_新建患者.py(45)] - 新建患者
+[  DEBUG] [2019-07-08 15:29:57,940] [5580] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST /patient/addpatient HTTP/1.1" 200 193
+[   INFO] [2019-07-08 15:29:57,941] [5580] [test_新建患者.py(63)] - 200
+[   INFO] [2019-07-08 15:29:57,942] [5580] [test_新建患者.py(64)] - http://test.dental360.cn:8383/patient/addpatient
+[   INFO] [2019-07-08 15:29:57,942] [5580] [test_新建患者.py(65)] - {
+  "code": 1,
+  "info": "ok",
+  "pageno": 0,
+  "pagesize": 0,
+  "totalcount": 0,
+  "list": {
+    "customerid": "368126135970234368",
+    "regtriage": "0"
+  },
+  "main": null,
+  "command": ""
+}
+[   INFO] [2019-07-08 15:29:57,942] [5580] [test_新建患者.py(66)] - {'code': 1, 'info': 'ok', 'pageno': 0, 'pagesize': 0, 'totalcount': 0, 'list': {'customerid': '368126135970234368', 'regtriage': '0'}, 'main': None, 'command': ''}
+[   INFO] [2019-07-08 15:29:57,950] [5580] [test_新建患者.py(22)] - 关闭会话
+[   INFO] [2019-07-08 15:29:57,951] [5580] [Result.py(106)] - 测试执行通过： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 15:29:57,952] [5580] [Result.py(59)] - 测试结束： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 15:29:57,952] [5580] [Result.py(61)] - 耗时： 0.824507795
+[   INFO] [2019-07-08 15:29:57,952] [13796] [HTMLReport.py(130)] - 
+Pass	test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+Pass	test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+
+[   INFO] [2019-07-08 15:29:57,983] [13796] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:01.344229
+共计执行用例数量：2
+执行成功用例数量：2
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：0
+[   INFO] [2019-07-08 15:31:57,066] [11088] [HTMLReport.py(101)] - 预计并发线程数：1
+[   INFO] [2019-07-08 15:31:57,067] [14128] [Result.py(48)] - 开始测试： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 15:31:57,067] [14128] [test_login.py(17)] - 初始化一个session
+[  DEBUG] [2019-07-08 15:31:57,081] [14128] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 15:31:57,506] [14128] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST //member/employeelogin HTTP/1.1" 200 188
+[   INFO] [2019-07-08 15:31:57,539] [14128] [test_login.py(42)] - 返回结果：
+[   INFO] [2019-07-08 15:31:57,541] [14128] [test_login.py(21)] - 关闭session
+[   INFO] [2019-07-08 15:31:57,542] [14128] [Result.py(106)] - 测试执行通过： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 15:31:57,542] [14128] [Result.py(59)] - 测试结束： test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+[   INFO] [2019-07-08 15:31:57,543] [14128] [Result.py(61)] - 耗时： 0.474781302
+[   INFO] [2019-07-08 15:31:57,543] [14128] [Result.py(48)] - 开始测试： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 15:31:57,543] [14128] [test_新建患者.py(17)] - 初始化一个session
+[  DEBUG] [2019-07-08 15:31:57,546] [14128] [connectionpool.py(205)] - Starting new HTTP connection (1): test.dental360.cn:8383
+[  DEBUG] [2019-07-08 15:31:57,927] [14128] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST //member/employeelogin HTTP/1.1" 200 188
+[   INFO] [2019-07-08 15:31:57,952] [14128] [test_新建患者.py(43)] - 返回结果：
+[   INFO] [2019-07-08 15:31:57,953] [14128] [test_新建患者.py(45)] - 新建患者
+[  DEBUG] [2019-07-08 15:31:58,218] [14128] [connectionpool.py(393)] - http://test.dental360.cn:8383 "POST /patient/addpatient HTTP/1.1" 200 193
+[   INFO] [2019-07-08 15:31:58,218] [14128] [test_新建患者.py(63)] - 200
+[   INFO] [2019-07-08 15:31:58,219] [14128] [test_新建患者.py(64)] - http://test.dental360.cn:8383/patient/addpatient
+[   INFO] [2019-07-08 15:31:58,219] [14128] [test_新建患者.py(65)] - {
+  "code": 1,
+  "info": "ok",
+  "pageno": 0,
+  "pagesize": 0,
+  "totalcount": 0,
+  "list": {
+    "customerid": "368126640746332160",
+    "regtriage": "0"
+  },
+  "main": null,
+  "command": ""
+}
+[   INFO] [2019-07-08 15:31:58,219] [14128] [test_新建患者.py(66)] - {'code': 1, 'info': 'ok', 'pageno': 0, 'pagesize': 0, 'totalcount': 0, 'list': {'customerid': '368126640746332160', 'regtriage': '0'}, 'main': None, 'command': ''}
+[   INFO] [2019-07-08 15:31:58,223] [14128] [test_新建患者.py(22)] - 关闭会话
+[   INFO] [2019-07-08 15:31:58,223] [14128] [Result.py(106)] - 测试执行通过： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 15:31:58,223] [14128] [Result.py(59)] - 测试结束： test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+[   INFO] [2019-07-08 15:31:58,223] [14128] [Result.py(61)] - 耗时： 0.6796083540000001
+[   INFO] [2019-07-08 15:31:58,224] [11088] [HTMLReport.py(130)] - 
+Pass	test_login_1___60105____L____111111__ (testcase.test_login.Test_login)
+Pass	test_新建患者_1___60105____L____111111__ (testcase.test_新建患者.Test_新建患者)
+
+[   INFO] [2019-07-08 15:31:58,241] [11088] [HTMLReport.py(151)] - 
+测试结束！
+运行时间: 0:00:01.157333
+共计执行用例数量：2
+执行成功用例数量：2
+执行失败用例数量：0
+跳过执行用例数量：0
+产生异常用例数量：0

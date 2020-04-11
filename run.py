@@ -32,5 +32,5 @@ HTMLReport.TestRunner(
     title="大商创自动化测试报告",
     description="大商创 web ui 自动化测试",
     report_file_name="index",
-    thread_count=1
+    thread_count=4
 ).run(suite)

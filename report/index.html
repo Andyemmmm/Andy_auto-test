@@ -363,19 +363,19 @@ function load() {
     <strong>
       <span class="lang-cn">启动时间：</span>
       <span class="lang-en">Start Time:</span>
-    </strong> 2019-04-04 16:37:06
+    </strong> 2020-04-11 20:37:18
   </p>
   <p class='attribute'>
     <strong>
       <span class="lang-cn">结束时间：</span>
       <span class="lang-en">End Time:</span>
-    </strong> 2019-04-04 16:37:40
+    </strong> 2020-04-11 20:38:12
   </p>
   <p class='attribute'>
     <strong>
       <span class="lang-cn">运行时长：</span>
       <span class="lang-en">Duration:</span>
-    </strong> 0:00:34.502437
+    </strong> 0:00:53.380287
   </p>
   <p class='attribute'>
     <strong>
@@ -385,11 +385,11 @@ function load() {
     <span class="lang-cn">合计：</span>
     <span class="lang-en">Total:</span>4&nbsp;&nbsp;&nbsp;&nbsp;
     <span class="lang-cn">通过：</span>
-    <span class="lang-en">Passed:</span>4&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="lang-en">Passed:</span>3&nbsp;&nbsp;&nbsp;&nbsp;
     <span class="lang-cn">失败：</span>
     <span class="lang-en">Failed:</span>0&nbsp;&nbsp;&nbsp;&nbsp;
     <span class="lang-cn">错误：</span>
-    <span class="lang-en">Error:</span>0&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="lang-en">Error:</span>1&nbsp;&nbsp;&nbsp;&nbsp;
     <span class="lang-cn">跳过：</span>
     <span class="lang-en">Skipped:</span>0&nbsp;&nbsp;&nbsp;&nbsp;
   </p>
@@ -462,14 +462,14 @@ function load() {
     </th>
   </tr>
   
-<tr class='passClass'>
-  <td>Test_Case.用户中心.test_login_封装.TestLogin</td>
+<tr class='errorClass'>
+  <td>Test_Case.用户中心.test_login_po.TestLogin</td>
   <td>4</td>
-  <td class="passCase">4</td>
+  <td class="passCase">3</td>
   <td class="failCase">0</td>
-  <td class="errorCase">0</td>
+  <td class="errorCase">1</td>
   <td class="skipCase">0</td>
-  <td style="text-align:right;">100.00%</td>
+  <td style="text-align:right;">75.00%</td>
   <td>
     <a href="javascript:showClassDetail('c1',4)">
       <span class="lang-cn">细节</span>
@@ -480,7 +480,7 @@ function load() {
 
 <tr id='pt1.1' class='none'>
   <td class='passCase'  colspan='7'>
-    <div class='testcase'>test_login_1___liu01____123456____1__: 登录的测试用例</div>
+    <div class='testcase'>test_login_3___15323751280________3__: 登录的测试用例</div>
   </td>
   <td class='passCase' align='center'>
     <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')">pass</a>
@@ -494,34 +494,33 @@ function load() {
       </div>
       <pre>
 pt1.1: 
-[   INFO] [2019-04-04 16:37:06,387] [2880] [Result.py(48)] - 开始测试： test_login_1___liu01____123456____1__ (Test_Case.用户中心.test_login_封装.TestLogin)
-[   INFO] [2019-04-04 16:37:09,640] [2880] [browser.py(23)] - 打开浏览器：chrome
-[   INFO] [2019-04-04 16:37:09,640] [2880] [browser.py(25)] - 设置隐式等待 10s
-[   INFO] [2019-04-04 16:37:09,642] [2880] [browser.py(28)] - 最大化浏览器
-[   INFO] [2019-04-04 16:37:10,806] [2880] [browser.py(56)] - 打开网址：http://192.168.22.128/dsc/
-[   INFO] [2019-04-04 16:37:12,210] [2880] [element.py(21)] - 点击元素：('link text', '请登录')
-[   INFO] [2019-04-04 16:37:12,211] [2880] [base.py(16)] - 查找元素：('link text', '请登录')
-[   INFO] [2019-04-04 16:37:12,258] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:12,695] [2880] [test_login_封装.py(67)] - 输入用户名：liu01
-[   INFO] [2019-04-04 16:37:12,695] [2880] [element.py(26)] - 发送文本或按键：('liu01',) 到元素上：('id', 'username')
-[   INFO] [2019-04-04 16:37:12,695] [2880] [base.py(16)] - 查找元素：('id', 'username')
-[   INFO] [2019-04-04 16:37:12,716] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:12,825] [2880] [element.py(26)] - 发送文本或按键：('123456',) 到元素上：('id', 'nloginpwd')
-[   INFO] [2019-04-04 16:37:12,825] [2880] [base.py(16)] - 查找元素：('id', 'nloginpwd')
-[   INFO] [2019-04-04 16:37:12,835] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:12,888] [2880] [element.py(21)] - 点击元素：('id', 'loginSubmit')
-[   INFO] [2019-04-04 16:37:12,889] [2880] [base.py(16)] - 查找元素：('id', 'loginSubmit')
-[   INFO] [2019-04-04 16:37:12,902] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:13,024] [2880] [base.py(16)] - 查找元素：('xpath', '//*[@id="ECS_MEMBERZONE"]/span[1]')
-[   INFO] [2019-04-04 16:37:13,529] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:13,565] [2880] [element.py(12)] - 获取元素的文本值：您好  士哥
-[   INFO] [2019-04-04 16:37:13,565] [2880] [base.py(16)] - 查找元素：('xpath', '//*[@id="ECS_MEMBERZONE"]/span[3]/a')
-[   INFO] [2019-04-04 16:37:13,577] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:13,591] [2880] [element.py(12)] - 获取元素的文本值：退出
-[   INFO] [2019-04-04 16:37:13,592] [2880] [browser.py(47)] - 关闭浏览器：chrome
-[   INFO] [2019-04-04 16:37:15,835] [2880] [Result.py(106)] - 测试执行通过： test_login_1___liu01____123456____1__ (Test_Case.用户中心.test_login_封装.TestLogin)
-[   INFO] [2019-04-04 16:37:15,836] [2880] [Result.py(59)] - 测试结束： test_login_1___liu01____123456____1__ (Test_Case.用户中心.test_login_封装.TestLogin)
-[   INFO] [2019-04-04 16:37:15,836] [2880] [Result.py(61)] - 耗时： 9.447659699999999
+[   INFO] [2020-04-11 20:37:18,757] [4020] [Result.py(48)] - 开始测试： test_login_3___15323751280________3__ (Test_Case.用户中心.test_login_po.TestLogin)
+[   INFO] [2020-04-11 20:37:25,602] [4020] [browser.py(26)] - 打开浏览器：chrome
+[   INFO] [2020-04-11 20:37:25,602] [4020] [browser.py(28)] - 设置隐式等待 10s
+[   INFO] [2020-04-11 20:37:25,612] [4020] [browser.py(31)] - 最大化浏览器
+[   INFO] [2020-04-11 20:37:34,619] [4020] [page_index.py(15)] - 点击请登录
+[   INFO] [2020-04-11 20:37:34,620] [4020] [element.py(26)] - 点击元素：('xpath', '//*[@id="app"]/div/div[1]/div/div/div[2]/a[2]')
+[   INFO] [2020-04-11 20:37:34,620] [4020] [base.py(16)] - 查找元素：('xpath', '//*[@id="app"]/div/div[1]/div/div/div[2]/a[2]')
+[   INFO] [2020-04-11 20:37:34,806] [4020] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:37:37,457] [4020] [element.py(26)] - 点击元素：('xpath', '//div[1]/div[2]/div/div[1]/ul/li[2]/span')
+[   INFO] [2020-04-11 20:37:37,458] [4020] [base.py(16)] - 查找元素：('xpath', '//div[1]/div[2]/div/div[1]/ul/li[2]/span')
+[   INFO] [2020-04-11 20:37:37,702] [4020] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:37:39,150] [4020] [element.py(31)] - 发送文本或按键：('15323751280',) 到元素上：('xpath', '//div[1]/div[2]/div/form[2]/div[1]/div/div/input')
+[   INFO] [2020-04-11 20:37:39,150] [4020] [base.py(16)] - 查找元素：('xpath', '//div[1]/div[2]/div/form[2]/div[1]/div/div/input')
+[   INFO] [2020-04-11 20:37:39,694] [4020] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:37:44,815] [4020] [element.py(31)] - 发送文本或按键：('',) 到元素上：('xpath', '//div[1]/div[2]/div/form[2]/div[2]/div/div/input')
+[   INFO] [2020-04-11 20:37:44,815] [4020] [base.py(16)] - 查找元素：('xpath', '//div[1]/div[2]/div/form[2]/div[2]/div/div/input')
+[   INFO] [2020-04-11 20:37:45,222] [4020] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:37:49,276] [4020] [element.py(26)] - 点击元素：('xpath', '//div[1]/div[2]/div/button/span')
+[   INFO] [2020-04-11 20:37:49,277] [4020] [base.py(16)] - 查找元素：('xpath', '//div[1]/div[2]/div/button/span')
+[   INFO] [2020-04-11 20:37:52,288] [4020] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:37:56,419] [4020] [base.py(16)] - 查找元素：('xpath', '//div[@class="el-form-item__error"]')
+[   INFO] [2020-04-11 20:37:56,751] [4020] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:37:57,312] [4020] [element.py(17)] - 获取元素的文本值：密码不能为空
+[   INFO] [2020-04-11 20:37:57,318] [4020] [browser.py(72)] - 关闭浏览器：chrome
+[   INFO] [2020-04-11 20:38:10,423] [4020] [Result.py(106)] - 测试执行通过： test_login_3___15323751280________3__ (Test_Case.用户中心.test_login_po.TestLogin)
+[   INFO] [2020-04-11 20:38:10,423] [4020] [Result.py(59)] - 测试结束： test_login_3___15323751280________3__ (Test_Case.用户中心.test_login_po.TestLogin)
+[   INFO] [2020-04-11 20:38:10,423] [4020] [Result.py(61)] - 耗时： 51.6642523
 
 </pre>
       <div></div>
@@ -529,47 +528,69 @@ pt1.1:
   </td>
 </tr>
 
-<tr id='pt1.2' class='none'>
-  <td class='passCase'  colspan='7'>
-    <div class='testcase'>test_login_2_______123465____2__: 登录的测试用例</div>
+<tr id='et1.2' class='none'>
+  <td class='errorCase'  colspan='7'>
+    <div class='testcase'>test_login_1___15323751280____666666____1__: 登录的测试用例</div>
   </td>
-  <td class='passCase' align='center'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')">pass</a>
+  <td class='errorCase' align='center'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1.2')">error</a>
   </td>
 </tr>
-<tr id='div_pt1.2' class="hiddenRow">
+<tr id='div_et1.2' class="hiddenRow">
   <td colspan='8'>
     <div class="popup_window">
       <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2').className = 'hiddenRow' ">[x]</a>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_et1.2').className = 'hiddenRow' ">[x]</a>
       </div>
       <pre>
-pt1.2: 
-[   INFO] [2019-04-04 16:37:15,837] [2880] [Result.py(48)] - 开始测试： test_login_2_______123465____2__ (Test_Case.用户中心.test_login_封装.TestLogin)
-[   INFO] [2019-04-04 16:37:18,322] [2880] [browser.py(23)] - 打开浏览器：chrome
-[   INFO] [2019-04-04 16:37:18,323] [2880] [browser.py(25)] - 设置隐式等待 10s
-[   INFO] [2019-04-04 16:37:18,328] [2880] [browser.py(28)] - 最大化浏览器
-[   INFO] [2019-04-04 16:37:19,461] [2880] [browser.py(56)] - 打开网址：http://192.168.22.128/dsc/
-[   INFO] [2019-04-04 16:37:20,838] [2880] [element.py(21)] - 点击元素：('link text', '请登录')
-[   INFO] [2019-04-04 16:37:20,838] [2880] [base.py(16)] - 查找元素：('link text', '请登录')
-[   INFO] [2019-04-04 16:37:20,896] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:21,421] [2880] [test_login_封装.py(67)] - 输入用户名：
-[   INFO] [2019-04-04 16:37:21,421] [2880] [element.py(26)] - 发送文本或按键：('',) 到元素上：('id', 'username')
-[   INFO] [2019-04-04 16:37:21,421] [2880] [base.py(16)] - 查找元素：('id', 'username')
-[   INFO] [2019-04-04 16:37:21,451] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:21,530] [2880] [element.py(26)] - 发送文本或按键：('123465',) 到元素上：('id', 'nloginpwd')
-[   INFO] [2019-04-04 16:37:21,530] [2880] [base.py(16)] - 查找元素：('id', 'nloginpwd')
-[   INFO] [2019-04-04 16:37:21,581] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:21,762] [2880] [element.py(21)] - 点击元素：('id', 'loginSubmit')
-[   INFO] [2019-04-04 16:37:21,762] [2880] [base.py(16)] - 查找元素：('id', 'loginSubmit')
-[   INFO] [2019-04-04 16:37:21,779] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:21,847] [2880] [base.py(16)] - 查找元素：('class name', 'msg-error')
-[   INFO] [2019-04-04 16:37:21,862] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:21,880] [2880] [element.py(12)] - 获取元素的文本值：请输入用户名
-[   INFO] [2019-04-04 16:37:21,881] [2880] [browser.py(47)] - 关闭浏览器：chrome
-[   INFO] [2019-04-04 16:37:24,147] [2880] [Result.py(106)] - 测试执行通过： test_login_2_______123465____2__ (Test_Case.用户中心.test_login_封装.TestLogin)
-[   INFO] [2019-04-04 16:37:24,147] [2880] [Result.py(59)] - 测试结束： test_login_2_______123465____2__ (Test_Case.用户中心.test_login_封装.TestLogin)
-[   INFO] [2019-04-04 16:37:24,147] [2880] [Result.py(61)] - 耗时： 8.310034499999999
+et1.2: 
+[   INFO] [2020-04-11 20:37:18,756] [12904] [Result.py(48)] - 开始测试： test_login_1___15323751280____666666____1__ (Test_Case.用户中心.test_login_po.TestLogin)
+[   INFO] [2020-04-11 20:37:25,494] [12904] [browser.py(26)] - 打开浏览器：chrome
+[   INFO] [2020-04-11 20:37:25,494] [12904] [browser.py(28)] - 设置隐式等待 10s
+[   INFO] [2020-04-11 20:37:25,503] [12904] [browser.py(31)] - 最大化浏览器
+[   INFO] [2020-04-11 20:37:34,503] [12904] [page_index.py(15)] - 点击请登录
+[   INFO] [2020-04-11 20:37:34,504] [12904] [element.py(26)] - 点击元素：('xpath', '//*[@id="app"]/div/div[1]/div/div/div[2]/a[2]')
+[   INFO] [2020-04-11 20:37:34,504] [12904] [base.py(16)] - 查找元素：('xpath', '//*[@id="app"]/div/div[1]/div/div/div[2]/a[2]')
+[   INFO] [2020-04-11 20:37:34,786] [12904] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:37:35,875] [12904] [element.py(26)] - 点击元素：('xpath', '//div[1]/div[2]/div/div[1]/ul/li[2]/span')
+[   INFO] [2020-04-11 20:37:35,875] [12904] [base.py(16)] - 查找元素：('xpath', '//div[1]/div[2]/div/div[1]/ul/li[2]/span')
+[   INFO] [2020-04-11 20:37:37,709] [12904] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:37:39,517] [12904] [element.py(31)] - 发送文本或按键：('15323751280',) 到元素上：('xpath', '//div[1]/div[2]/div/form[2]/div[1]/div/div/input')
+[   INFO] [2020-04-11 20:37:39,692] [12904] [base.py(16)] - 查找元素：('xpath', '//div[1]/div[2]/div/form[2]/div[1]/div/div/input')
+[   INFO] [2020-04-11 20:37:40,027] [12904] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:37:48,503] [12904] [element.py(31)] - 发送文本或按键：('666666',) 到元素上：('xpath', '//div[1]/div[2]/div/form[2]/div[2]/div/div/input')
+[   INFO] [2020-04-11 20:37:48,504] [12904] [base.py(16)] - 查找元素：('xpath', '//div[1]/div[2]/div/form[2]/div[2]/div/div/input')
+[   INFO] [2020-04-11 20:37:49,469] [12904] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:37:57,328] [12904] [element.py(26)] - 点击元素：('xpath', '//div[1]/div[2]/div/button/span')
+[   INFO] [2020-04-11 20:37:57,332] [12904] [base.py(16)] - 查找元素：('xpath', '//div[1]/div[2]/div/button/span')
+[   INFO] [2020-04-11 20:37:58,107] [12904] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:38:05,735] [12904] [base.py(16)] - 查找元素：('xpath', "//p[@class='el-message__content']")
+[   INFO] [2020-04-11 20:38:07,458] [12904] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:38:08,054] [12904] [browser.py(72)] - 关闭浏览器：chrome
+[  ERROR] [2020-04-11 20:38:10,557] [12904] [Result.py(125)] - 测试产生错误： test_login_1___15323751280____666666____1__ (Test_Case.用户中心.test_login_po.TestLogin)
+Traceback (most recent call last):
+  File "C:\Users\Doctor\PycharmProjects\untitled\venv\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\Andy_auto_test\Test_Case\用户中心\test_login_po.py", line 51, in test_login
+    text = Page_CommunityList(se.driver).get_msg()
+  File "E:\Andy_auto_test\Page_Object\page_community.py", line 29, in get_msg
+    return self.get_element_text(self.loc_msg)
+  File "E:\Andy_auto_test\Common\selenium_library\element.py", line 16, in get_element_text
+    text = self.find_element(locator).text
+  File "C:\Users\Doctor\PycharmProjects\untitled\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 76, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)['value']
+  File "C:\Users\Doctor\PycharmProjects\untitled\venv\lib\site-packages\selenium\webdriver\remote\webelement.py", line 633, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\Doctor\PycharmProjects\untitled\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Doctor\PycharmProjects\untitled\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: element is not attached to the page document
+  (Session info: chrome=80.0.3987.162)
+
+
+[   INFO] [2020-04-11 20:38:10,558] [12904] [Result.py(59)] - 测试结束： test_login_1___15323751280____666666____1__ (Test_Case.用户中心.test_login_po.TestLogin)
+[   INFO] [2020-04-11 20:38:10,558] [12904] [Result.py(61)] - 耗时： 51.8010404
 
 </pre>
       <div></div>
@@ -579,7 +600,7 @@ pt1.2:
 
 <tr id='pt1.3' class='none'>
   <td class='passCase'  colspan='7'>
-    <div class='testcase'>test_login_3___________2__: 登录的测试用例</div>
+    <div class='testcase'>test_login_4_______123456____4__: 登录的测试用例</div>
   </td>
   <td class='passCase' align='center'>
     <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')">pass</a>
@@ -593,31 +614,33 @@ pt1.2:
       </div>
       <pre>
 pt1.3: 
-[   INFO] [2019-04-04 16:37:24,147] [2880] [Result.py(48)] - 开始测试： test_login_3___________2__ (Test_Case.用户中心.test_login_封装.TestLogin)
-[   INFO] [2019-04-04 16:37:26,459] [2880] [browser.py(23)] - 打开浏览器：chrome
-[   INFO] [2019-04-04 16:37:26,459] [2880] [browser.py(25)] - 设置隐式等待 10s
-[   INFO] [2019-04-04 16:37:26,460] [2880] [browser.py(28)] - 最大化浏览器
-[   INFO] [2019-04-04 16:37:27,608] [2880] [browser.py(56)] - 打开网址：http://192.168.22.128/dsc/
-[   INFO] [2019-04-04 16:37:28,764] [2880] [element.py(21)] - 点击元素：('link text', '请登录')
-[   INFO] [2019-04-04 16:37:28,764] [2880] [base.py(16)] - 查找元素：('link text', '请登录')
-[   INFO] [2019-04-04 16:37:28,797] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:29,109] [2880] [test_login_封装.py(67)] - 输入用户名：
-[   INFO] [2019-04-04 16:37:29,109] [2880] [element.py(26)] - 发送文本或按键：('',) 到元素上：('id', 'username')
-[   INFO] [2019-04-04 16:37:29,109] [2880] [base.py(16)] - 查找元素：('id', 'username')
-[   INFO] [2019-04-04 16:37:29,143] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:29,252] [2880] [element.py(26)] - 发送文本或按键：('',) 到元素上：('id', 'nloginpwd')
-[   INFO] [2019-04-04 16:37:29,252] [2880] [base.py(16)] - 查找元素：('id', 'nloginpwd')
-[   INFO] [2019-04-04 16:37:29,267] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:29,312] [2880] [element.py(21)] - 点击元素：('id', 'loginSubmit')
-[   INFO] [2019-04-04 16:37:29,312] [2880] [base.py(16)] - 查找元素：('id', 'loginSubmit')
-[   INFO] [2019-04-04 16:37:29,322] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:29,385] [2880] [base.py(16)] - 查找元素：('class name', 'msg-error')
-[   INFO] [2019-04-04 16:37:29,416] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:29,439] [2880] [element.py(12)] - 获取元素的文本值：请输入用户名
-[   INFO] [2019-04-04 16:37:29,439] [2880] [browser.py(47)] - 关闭浏览器：chrome
-[   INFO] [2019-04-04 16:37:32,488] [2880] [Result.py(106)] - 测试执行通过： test_login_3___________2__ (Test_Case.用户中心.test_login_封装.TestLogin)
-[   INFO] [2019-04-04 16:37:32,488] [2880] [Result.py(59)] - 测试结束： test_login_3___________2__ (Test_Case.用户中心.test_login_封装.TestLogin)
-[   INFO] [2019-04-04 16:37:32,488] [2880] [Result.py(61)] - 耗时： 8.340232800000003
+[   INFO] [2020-04-11 20:37:18,758] [38528] [Result.py(48)] - 开始测试： test_login_4_______123456____4__ (Test_Case.用户中心.test_login_po.TestLogin)
+[   INFO] [2020-04-11 20:37:25,906] [38528] [browser.py(26)] - 打开浏览器：chrome
+[   INFO] [2020-04-11 20:37:25,907] [38528] [browser.py(28)] - 设置隐式等待 10s
+[   INFO] [2020-04-11 20:37:25,916] [38528] [browser.py(31)] - 最大化浏览器
+[   INFO] [2020-04-11 20:37:37,910] [38528] [page_index.py(15)] - 点击请登录
+[   INFO] [2020-04-11 20:37:37,917] [38528] [element.py(26)] - 点击元素：('xpath', '//*[@id="app"]/div/div[1]/div/div/div[2]/a[2]')
+[   INFO] [2020-04-11 20:37:37,919] [38528] [base.py(16)] - 查找元素：('xpath', '//*[@id="app"]/div/div[1]/div/div/div[2]/a[2]')
+[   INFO] [2020-04-11 20:37:38,115] [38528] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:37:38,961] [38528] [element.py(26)] - 点击元素：('xpath', '//div[1]/div[2]/div/div[1]/ul/li[2]/span')
+[   INFO] [2020-04-11 20:37:38,962] [38528] [base.py(16)] - 查找元素：('xpath', '//div[1]/div[2]/div/div[1]/ul/li[2]/span')
+[   INFO] [2020-04-11 20:37:40,744] [38528] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:37:45,260] [38528] [element.py(31)] - 发送文本或按键：('',) 到元素上：('xpath', '//div[1]/div[2]/div/form[2]/div[1]/div/div/input')
+[   INFO] [2020-04-11 20:37:45,261] [38528] [base.py(16)] - 查找元素：('xpath', '//div[1]/div[2]/div/form[2]/div[1]/div/div/input')
+[   INFO] [2020-04-11 20:37:45,505] [38528] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:37:52,301] [38528] [element.py(31)] - 发送文本或按键：('123456',) 到元素上：('xpath', '//div[1]/div[2]/div/form[2]/div[2]/div/div/input')
+[   INFO] [2020-04-11 20:37:52,304] [38528] [base.py(16)] - 查找元素：('xpath', '//div[1]/div[2]/div/form[2]/div[2]/div/div/input')
+[   INFO] [2020-04-11 20:37:53,267] [38528] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:37:58,254] [38528] [element.py(26)] - 点击元素：('xpath', '//div[1]/div[2]/div/button/span')
+[   INFO] [2020-04-11 20:37:58,255] [38528] [base.py(16)] - 查找元素：('xpath', '//div[1]/div[2]/div/button/span')
+[   INFO] [2020-04-11 20:37:58,930] [38528] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:38:08,339] [38528] [base.py(16)] - 查找元素：('xpath', '//div[@class="el-form-item__error"]')
+[   INFO] [2020-04-11 20:38:08,440] [38528] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:38:08,632] [38528] [element.py(17)] - 获取元素的文本值：请输入11位手机号码
+[   INFO] [2020-04-11 20:38:08,633] [38528] [browser.py(72)] - 关闭浏览器：chrome
+[   INFO] [2020-04-11 20:38:10,605] [38528] [Result.py(106)] - 测试执行通过： test_login_4_______123456____4__ (Test_Case.用户中心.test_login_po.TestLogin)
+[   INFO] [2020-04-11 20:38:10,606] [38528] [Result.py(59)] - 测试结束： test_login_4_______123456____4__ (Test_Case.用户中心.test_login_po.TestLogin)
+[   INFO] [2020-04-11 20:38:10,606] [38528] [Result.py(61)] - 耗时： 51.8468692
 
 </pre>
       <div></div>
@@ -627,7 +650,7 @@ pt1.3:
 
 <tr id='pt1.4' class='none'>
   <td class='passCase'  colspan='7'>
-    <div class='testcase'>test_login_4___liu________3__: 登录的测试用例</div>
+    <div class='testcase'>test_login_2___15323751280____123456____2__: 登录的测试用例</div>
   </td>
   <td class='passCase' align='center'>
     <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')">pass</a>
@@ -641,31 +664,33 @@ pt1.3:
       </div>
       <pre>
 pt1.4: 
-[   INFO] [2019-04-04 16:37:32,489] [2880] [Result.py(48)] - 开始测试： test_login_4___liu________3__ (Test_Case.用户中心.test_login_封装.TestLogin)
-[   INFO] [2019-04-04 16:37:35,051] [2880] [browser.py(23)] - 打开浏览器：chrome
-[   INFO] [2019-04-04 16:37:35,051] [2880] [browser.py(25)] - 设置隐式等待 10s
-[   INFO] [2019-04-04 16:37:35,053] [2880] [browser.py(28)] - 最大化浏览器
-[   INFO] [2019-04-04 16:37:36,185] [2880] [browser.py(56)] - 打开网址：http://192.168.22.128/dsc/
-[   INFO] [2019-04-04 16:37:37,731] [2880] [element.py(21)] - 点击元素：('link text', '请登录')
-[   INFO] [2019-04-04 16:37:37,731] [2880] [base.py(16)] - 查找元素：('link text', '请登录')
-[   INFO] [2019-04-04 16:37:37,786] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:38,265] [2880] [test_login_封装.py(67)] - 输入用户名：liu
-[   INFO] [2019-04-04 16:37:38,265] [2880] [element.py(26)] - 发送文本或按键：('liu',) 到元素上：('id', 'username')
-[   INFO] [2019-04-04 16:37:38,265] [2880] [base.py(16)] - 查找元素：('id', 'username')
-[   INFO] [2019-04-04 16:37:38,296] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:38,441] [2880] [element.py(26)] - 发送文本或按键：('',) 到元素上：('id', 'nloginpwd')
-[   INFO] [2019-04-04 16:37:38,441] [2880] [base.py(16)] - 查找元素：('id', 'nloginpwd')
-[   INFO] [2019-04-04 16:37:38,456] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:38,540] [2880] [element.py(21)] - 点击元素：('id', 'loginSubmit')
-[   INFO] [2019-04-04 16:37:38,540] [2880] [base.py(16)] - 查找元素：('id', 'loginSubmit')
-[   INFO] [2019-04-04 16:37:38,554] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:38,628] [2880] [base.py(16)] - 查找元素：('class name', 'msg-error')
-[   INFO] [2019-04-04 16:37:38,645] [2880] [base.py(23)] - 查找元素成功
-[   INFO] [2019-04-04 16:37:38,666] [2880] [element.py(12)] - 获取元素的文本值：请输入密码
-[   INFO] [2019-04-04 16:37:38,667] [2880] [browser.py(47)] - 关闭浏览器：chrome
-[   INFO] [2019-04-04 16:37:40,887] [2880] [Result.py(106)] - 测试执行通过： test_login_4___liu________3__ (Test_Case.用户中心.test_login_封装.TestLogin)
-[   INFO] [2019-04-04 16:37:40,888] [2880] [Result.py(59)] - 测试结束： test_login_4___liu________3__ (Test_Case.用户中心.test_login_封装.TestLogin)
-[   INFO] [2019-04-04 16:37:40,888] [2880] [Result.py(61)] - 耗时： 8.398740800000002
+[   INFO] [2020-04-11 20:37:18,757] [48664] [Result.py(48)] - 开始测试： test_login_2___15323751280____123456____2__ (Test_Case.用户中心.test_login_po.TestLogin)
+[   INFO] [2020-04-11 20:37:25,358] [48664] [browser.py(26)] - 打开浏览器：chrome
+[   INFO] [2020-04-11 20:37:25,359] [48664] [browser.py(28)] - 设置隐式等待 10s
+[   INFO] [2020-04-11 20:37:25,374] [48664] [browser.py(31)] - 最大化浏览器
+[   INFO] [2020-04-11 20:37:37,457] [48664] [page_index.py(15)] - 点击请登录
+[   INFO] [2020-04-11 20:37:37,458] [48664] [element.py(26)] - 点击元素：('xpath', '//*[@id="app"]/div/div[1]/div/div/div[2]/a[2]')
+[   INFO] [2020-04-11 20:37:37,458] [48664] [base.py(16)] - 查找元素：('xpath', '//*[@id="app"]/div/div[1]/div/div/div[2]/a[2]')
+[   INFO] [2020-04-11 20:37:37,667] [48664] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:37:48,746] [48664] [element.py(26)] - 点击元素：('xpath', '//div[1]/div[2]/div/div[1]/ul/li[2]/span')
+[   INFO] [2020-04-11 20:37:48,748] [48664] [base.py(16)] - 查找元素：('xpath', '//div[1]/div[2]/div/div[1]/ul/li[2]/span')
+[   INFO] [2020-04-11 20:37:52,806] [48664] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:37:56,291] [48664] [element.py(31)] - 发送文本或按键：('15323751280',) 到元素上：('xpath', '//div[1]/div[2]/div/form[2]/div[1]/div/div/input')
+[   INFO] [2020-04-11 20:37:56,292] [48664] [base.py(16)] - 查找元素：('xpath', '//div[1]/div[2]/div/form[2]/div[1]/div/div/input')
+[   INFO] [2020-04-11 20:37:57,297] [48664] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:38:07,977] [48664] [element.py(31)] - 发送文本或按键：('123456',) 到元素上：('xpath', '//div[1]/div[2]/div/form[2]/div[2]/div/div/input')
+[   INFO] [2020-04-11 20:38:07,979] [48664] [base.py(16)] - 查找元素：('xpath', '//div[1]/div[2]/div/form[2]/div[2]/div/div/input')
+[   INFO] [2020-04-11 20:38:08,074] [48664] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:38:09,041] [48664] [element.py(26)] - 点击元素：('xpath', '//div[1]/div[2]/div/button/span')
+[   INFO] [2020-04-11 20:38:09,041] [48664] [base.py(16)] - 查找元素：('xpath', '//div[1]/div[2]/div/button/span')
+[   INFO] [2020-04-11 20:38:09,112] [48664] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:38:10,840] [48664] [base.py(16)] - 查找元素：('xpath', "//p[@class='el-message__content']")
+[   INFO] [2020-04-11 20:38:11,957] [48664] [base.py(23)] - 查找元素成功
+[   INFO] [2020-04-11 20:38:11,994] [48664] [element.py(17)] - 获取元素的文本值：账号密码输入有误，请重新输入
+[   INFO] [2020-04-11 20:38:11,994] [48664] [browser.py(72)] - 关闭浏览器：chrome
+[   INFO] [2020-04-11 20:38:12,130] [48664] [Result.py(106)] - 测试执行通过： test_login_2___15323751280____123456____2__ (Test_Case.用户中心.test_login_po.TestLogin)
+[   INFO] [2020-04-11 20:38:12,130] [48664] [Result.py(59)] - 测试结束： test_login_2___15323751280____123456____2__ (Test_Case.用户中心.test_login_po.TestLogin)
+[   INFO] [2020-04-11 20:38:12,131] [48664] [Result.py(61)] - 耗时： 53.372994
 
 </pre>
       <div></div>
@@ -679,11 +704,11 @@ pt1.4:
     <span class="lang-en">Total</span>
     </td>
     <td>4</td>
-    <td class="passCase">4</td>
+    <td class="passCase">3</td>
     <td class="failCase">0</td>
-    <td class="errorCase">0</td>
+    <td class="errorCase">1</td>
     <td class="skipCase">0</td>
-    <td style="text-align:right;">100.00%</td>
+    <td style="text-align:right;">75.00%</td>
     <td>&nbsp;</td>
   </tr>
 </table>

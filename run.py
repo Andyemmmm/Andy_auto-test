@@ -2,6 +2,7 @@
 import argparse
 import unittest
 import HTMLReport
+from EleganceReport import EleganceReport
 
 from Common.tools.rw_ini import write_config
 from Test_Suite.用户中心 import suite_登录,suite_注册
@@ -28,9 +29,13 @@ suite.addTests(suite_登录.get_suite())
 # suite.addTests(suite_购物车.get_suite())
 
 
-HTMLReport.TestRunner(
-    title="大商创自动化测试报告",
-    description="大商创 web ui 自动化测试",
-    report_file_name="index",
-    thread_count=1
-).run(suite)
+# HTMLReport.TestRunner(
+#     title="大商创自动化测试报告",
+#     description="大商创 web ui 自动化测试",
+#     report_file_name="index",
+#     thread_count=1
+# ).run(suite)
+
+'''报告模板2'''
+result = EleganceReport(suite)
+result.report(filename='测试报告', description='爱问后台测试报告', report_dir='report', theme='theme_memories')

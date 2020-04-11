@@ -7,7 +7,6 @@
 6、点击登录
 7、{验证结果}
 8、关闭浏览器
-
 """
 import unittest
 import ddt

@@ -354,3 +354,7 @@ Pass	test_login_4___liu________3__ (Test_Case.用户中心.test_login_封装.Tes
 执行失败用例数量：0
 跳过执行用例数量：0
 产生异常用例数量：0
+[   INFO] [2020-04-11 19:37:05,879] [10500] [HTMLReport.py(101)] - 预计并发线程数：1
+[   INFO] [2020-04-11 19:37:05,886] [332] [Result.py(48)] - 开始测试： test_login_1___liu01____123456____1__ (Test_Case.用户中心.test_login_封装.TestLogin)
+[  DEBUG] [2020-04-11 19:37:06,414] [332] [remote_connection.py(388)] - POST http://127.0.0.1:61878/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+[  DEBUG] [2020-04-11 19:37:06,416] [332] [connectionpool.py(205)] - Starting new HTTP connection (1): 127.0.0.1:61878

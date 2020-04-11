@@ -10,3 +10,19 @@ def read_config(file):
     rc = ConfigParser()
     rc.read(file, encoding="utf-8")
     return rc
+
+
+def write_config(file: str, section, option, value=None):
+    """写配置文件
+
+    :param file: 文件路径
+    :param section: 目标
+    :param option: 选项
+    :param value: 值
+    :return:
+    """
+    rc = ConfigParser()
+    rc.read(file, encoding="utf-8")
+    rc.set(section, option, value)
+    with open(file, "w", encoding="utf-8") as f:
+        rc.write(f)

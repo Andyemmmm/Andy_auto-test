@@ -13,6 +13,6 @@ def get_suite():
     # suite.addTests(loader.loadTestsFromTestCase(test_login_ddt_file.TestLogin))
     # suite.addTests(loader.loadTestsFromTestCase(test_login_log.TestLogin))
     # suite.addTests(loader.loadTestsFromTestCase(test_login_封装.TestLogin))
-    suite.addTests(loader.loadTestsFromTestCase(test_login_po.TestLogin))
-    # suite.addTests(loader.loadTestsFromTestCase(test_register.Test_Register))
+    # suite.addTests(loader.loadTestsFromTestCase(test_login_po.TestLogin))
+    suite.addTests(loader.loadTestsFromTestCase(test_register.Test_Register))
     return suite

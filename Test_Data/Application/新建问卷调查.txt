@@ -1,0 +1,4 @@
+# 用户名|密码|断言类型
+# 断言类型：1-成功，2-用户名或用户名与密码都为空，3-密码为空
+# 标题, 描述, 图片, card封面, 备注, 选项1, 选项2, 图片1, 选项3, 图片2, 描述, 富文本内容, 内容, 医生姓名, 昵称, 医院, 专业, 链接地址, assert_type
+标题|这是新建一个社区的问卷调查|C:\\Users\\Doctor\\Desktop\\tutu\\1.jpg|C:\\Users\\Doctor\\Desktop\\tutu\\1.jpg|深圳市南山区|第一个选项|第二个选项|C:\\Users\\Doctor\\Desktop\\tutu\\2.jpg|第三个选项|C:\\Users\\Doctor\\Desktop\\tutu\\3.jpg|这是提示的语言|这是一个富文本框的内容|这是一个按钮的提交文案|程易|职称|医院|专业三十年|https://www.baidu.com|1

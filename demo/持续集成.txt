@@ -1,0 +1,51 @@
+https://jenkins.io/zh/
+
+插件安装
+
+系统管理 -> 管理插件 -> 可选插件 -> 过滤
+
+HTML Publisher
+
+Workspace Cleanup
+
+Startup Trigger
+
+Groovy
+
+
+任务一：配置内容安全策略
+    1、新建任务：构建一个自由风格的软件项目
+    2、Build Triggers
+        2.1、勾选：Build when job nodes start
+    3、Build
+        3.1、选择：Execute system Groovy script
+        3.2、Groovy Script:
+System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")
+    4、保存
+
+任务二：community_ui_autotest
+    1、新建任务：构建一个自由风格的软件项目
+    2、Source Code Management
+        2.1、Subversion
+            Repository URL：ssh://gogs@git.dev.wenwo.com:2222/fei.he/UI_autotest.git
+            Credentials：添加GIT账号密码或密钥
+            Check-out Strategy：Always check out a fresh copy
+    3、Build Triggers
+        3.1、定时构建
+            Schedule：H H(21-23) * * 0-5
+    4、Build Environment
+        勾选：Delete workspace before build starts
+    5、Build
+        5.1、选择：执行 shell
+            Command：
+cd ${WORKSPACE}
+/usr/local/bin/python3 run.py
+    6、Post-build Actions
+
+        6.1、选择Publish HTML reports
+            HTML directory to archive：${WORKSPACE}/report
+            Index page[s]：index.html
+            勾选：Keep past HTML reports
+        6.2、归档成品
+            Files to archive：**
+    7、保存

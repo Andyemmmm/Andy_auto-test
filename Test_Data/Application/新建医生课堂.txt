@@ -1,0 +1,3 @@
+# 这是新建医生课堂的数据文件
+# 课程标题|课程简介|课程视频|课程封面|课程介绍|课程大纲|医生姓名|医生头衔|医生头像|调查问卷|邀请医生名称|邀请医生手机号码|expect：1-成功，2-失败，3-其它
+新建医生课堂|这十以大非社反倒是开发|C:\\Users\\Doctor\\Videos\\装逼的下场.mp4|C:\\Users\\Doctor\\Desktop\\tutu\\1.jpg|可以的 Hello world again again!|Hello world|初夏|手术外科主任|C:\\Users\\Doctor\\Desktop\\tutu\\3.jpg|https://www.baidu.com|初夏|18616673703|1

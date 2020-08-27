@@ -1,3 +1,0 @@
-# 新建咨询公告
-# 断言类型：1-成功，2-失败，3-其他
-新建咨询公告|C:\\Users\\Doctor\\Desktop\\tutu\\fc1f4134970a304e0ec1e9f8dec8a786c8175cd4.gif|andy|C:\\Users\\Doctor\\Desktop\\tutu\\1.jpg|可以的 Hello world again again!|1
